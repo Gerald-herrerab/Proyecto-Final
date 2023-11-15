@@ -18,8 +18,11 @@ public static void main(String [] arg){
 
     window.setLocationRelativeTo(null) ;
     window.setVisible(true) ;
+<<<<<<< HEAD
 
     gamePanel.startGameThread();
+=======
+>>>>>>> d5638840c9a913d3ee1c3eb1122086e5378f0e73
     
 
     }

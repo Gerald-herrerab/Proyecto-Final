@@ -2,8 +2,11 @@ package Main;
 
 import java.awt.Color;
 import java.awt.Dimension;
+<<<<<<< HEAD
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+=======
+>>>>>>> d5638840c9a913d3ee1c3eb1122086e5378f0e73
 
 import javax.swing.JPanel;
 import javax.swing.plaf.DimensionUIResource;
@@ -13,6 +16,7 @@ public class GamePanel extends JPanel implements Runnable{
     final int originalTileSize = 16;  // 16x16 tile
     final int scale = 3;
 
+<<<<<<< HEAD
     final int tileSize = originalTileSize * scale; //48x48 tile
     final int maxScreenCol = 16;
     final int maxScreenRow = 12;
@@ -31,13 +35,27 @@ public class GamePanel extends JPanel implements Runnable{
 
 
 
+=======
+    final int tileSize = originalTileSize * scale;
+    final int maxScreenCol = 16;
+    final int maxScreenRow = 12;
+    final int screenWidth = tileSize * maxScreenCol;
+    final int screenHeigth = tileSize * maxScreenRow; 
+
+    Thread gameThread;
+
+>>>>>>> d5638840c9a913d3ee1c3eb1122086e5378f0e73
 
     public GamePanel () {
         this.setPreferredSize(new Dimension(screenWidth, screenHeigth));
         this.setBackground(Color.black);
         this.setDoubleBuffered(true);
+<<<<<<< HEAD
         this.addKeyListener(keyH);
         this.setFocusable(true);
+=======
+
+>>>>>>> d5638840c9a913d3ee1c3eb1122086e5378f0e73
 
     }
 
@@ -52,6 +70,7 @@ public class GamePanel extends JPanel implements Runnable{
 
     @Override
     public void run() {
+<<<<<<< HEAD
 
         double drawInterval = 1000000000/FPS; // 0.0166666 segundos
         double nextDrawTime = System.nanoTime() + drawInterval;
@@ -126,6 +145,11 @@ public class GamePanel extends JPanel implements Runnable{
         g2.dispose();
     }
 
+=======
+        
+    }
+
+>>>>>>> d5638840c9a913d3ee1c3eb1122086e5378f0e73
 
 
     
