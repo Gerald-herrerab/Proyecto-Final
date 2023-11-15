@@ -34,11 +34,11 @@ public class ventana extends JFrame implements Runnable {
         // Este método se ejecutará en el hilo creado
         while (true) {
 
-           /** Color newColor = new Color(
+            Color newColor = new Color(
                     (int) (Math.random() * 256),
                     (int) (Math.random() * 256),
                     (int) (Math.random() * 256)
-            ); */
+            ); 
 
             canvas.setBackground(newColor);
 
