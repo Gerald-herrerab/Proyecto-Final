@@ -17,22 +17,13 @@ public class GamePanel extends JPanel implements Runnable{
     public final int tileSize = originalTileSize * scale; //48x48 tile
     final int maxScreenCol = 16;
     final int maxScreenRow = 12;
-    final int screenWidth = tileSize * maxScreenCol; //758 pixeles
-    final int screenHeigth = tileSize * maxScreenRow; //576 pixeles
-
+    final int screenWidth = tileSize * maxScreenCol; 
+    final int screenHeigth = tileSize * maxScreenRow; 
     int FPS = 60;
 
     KeyHandler keyH = new KeyHandler();
     Thread gameThread;
     Player player = new Player (this, keyH);
-
-
-    //establecer la posición predeterminada del jugador
-    int playerX = 100;
-    int playerY = 100;
-    int playerSpeed = 5;
-
-
 
 
     public GamePanel () {
@@ -56,7 +47,7 @@ public class GamePanel extends JPanel implements Runnable{
     @Override
     public void run() {
 
-        double drawInterval = 1000000000/FPS; // 0.0166666 segundos
+        double drawInterval = 1000000000/FPS;
         double nextDrawTime = System.nanoTime() + drawInterval;
 
 
@@ -64,11 +55,9 @@ public class GamePanel extends JPanel implements Runnable{
 
 
 
-            // actualizar la informacion como la posicion del personaje
             update();
 
 
-            // dibuja la pantalla con la informacion de cada actualizacion 
             repaint();
 
 
