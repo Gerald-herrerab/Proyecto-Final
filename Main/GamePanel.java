@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import entidad.Player;
+import tile.TileManager;
 
 import javax.swing.JPanel;
 import javax.swing.plaf.DimensionUIResource;
@@ -15,12 +16,14 @@ public class GamePanel extends JPanel implements Runnable{
     final int scale = 3;
 
     public final int tileSize = originalTileSize * scale; //48x48 tile
-    final int maxScreenCol = 16;
-    final int maxScreenRow = 12;
-    final int screenWidth = tileSize * maxScreenCol; 
-    final int screenHeigth = tileSize * maxScreenRow; 
+    public final int maxScreenCol = 16;
+    public final int maxScreenRow = 12;
+    public final int screenWidth = tileSize * maxScreenCol; 
+    public final int screenHeigth = tileSize * maxScreenRow;
+    
     int FPS = 60;
 
+    TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
     Thread gameThread;
     Player player = new Player (this, keyH);
@@ -94,6 +97,8 @@ public class GamePanel extends JPanel implements Runnable{
 
         Graphics2D g2 = (Graphics2D) g;
 
+        tileM.draw(g2);
+        
         player.draw(g2);
 
         g2.dispose();
