@@ -2,6 +2,7 @@ package entidad;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.security.Key;
@@ -15,21 +16,37 @@ public class Player extends Entity {
 
     GamePanel gp;
     KeyHandler KeyH;
+    
+    public final int screenX;
+    public final int screenY;
+    
+    
 
     public Player (GamePanel gp, KeyHandler KeyH) {
 
         this.gp = gp;
         this.KeyH = KeyH;
         
+        screenX = gp.screenWidth/2;
+        screenY = gp.screenHeigth/2;
+        
+        solidArea = new Rectangle();
+        solidArea.x = 8;
+        solidArea.y = 8;
+        solidArea.width = 24;
+        solidArea.height = 24;
+        
+        
         setDefaultValues();
         getPlayerImage();
 
     }
 
+    //posicin del jugadr en el mapa
     public void setDefaultValues () {
 
-        x = 100;
-        y = 100;
+        worldX = gp.tileSize * 23;
+        worldY = gp.tileSize * 21;
         speed = 4;
         direccion = "down";
 
@@ -60,32 +77,42 @@ public class Player extends Entity {
     		
             if(KeyH.upPressed == true) {
                 direccion = "up";
-                y -= speed;
-
             }
 
             else if(KeyH.downPressed == true) {
                 direccion = "down";
-                y += speed;
-
             }
 
             else if(KeyH.leftPressed == true) {
                 direccion = "left";
-                x -= speed;
-
             }
 
             else if(KeyH.rigthpressed == true) {
                 direccion = "rigth";
-                x += speed;
-            
             }
+            
+            //comprobador de colicion
+            
+            collisionOn = false;
+            gp.coCheck.checkTile(this);
+            
+            //si la colicion es falsa el jugador puede moverse
+            
+            if(collisionOn == false) {
+            	
+        		switch(direccion) {
+        		case "up": worldY -= speed; break;
+        		case "down": worldY += speed; break;
+        		case "left": worldX -= speed; break;
+        		case "rigth": worldX += speed; break;
+            }
+        }
+        		
             
             spriteCounter++;
             if(spriteCounter > 15) {
             	if(spriteNum == 1) {
-            		spriteNum = 2;
+            		spriteNum = 2; 
             	}
             	else if (spriteNum == 2) {
             		spriteNum = 1;
@@ -138,7 +165,7 @@ public class Player extends Entity {
           break;
       }
 
-      g2.drawImage(image, x, y, gp.tileSize, gp.tileSize,  null);
+      g2.drawImage(image, screenX, screenY, gp.tileSize, gp.tileSize,  null);
 
 
     }
