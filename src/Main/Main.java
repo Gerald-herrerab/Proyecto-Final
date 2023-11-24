@@ -19,6 +19,7 @@ public static void main(String [] arg){
     window.setLocationRelativeTo(null) ; 
     window.setVisible(true) ;
 
+    gamePanel.setupGame();
     gamePanel.startGameThread();
     
 
