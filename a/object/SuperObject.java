@@ -3,7 +3,7 @@ package object;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
-import Main.GamePanel;
+import a.Main.GamePanel;
 
 public class SuperObject {
 	

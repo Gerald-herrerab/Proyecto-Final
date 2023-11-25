@@ -1,4 +1,4 @@
-package tile;
+package a.tile;
 
 import java.awt.Graphics2D;
 import java.io.BufferedReader;
@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 import javax.imageio.ImageIO;
 
-import Main.GamePanel;
+import a.Main.GamePanel;
 
 public class TileManager {
 	

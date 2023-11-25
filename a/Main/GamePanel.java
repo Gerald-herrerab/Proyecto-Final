@@ -1,4 +1,4 @@
-package Main;
+package a.Main;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -6,10 +6,11 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import entidad.Player;
 import object.SuperObject;
-import tile.TileManager;
 
 import javax.swing.JPanel;
 import javax.swing.plaf.DimensionUIResource;
+
+import a.tile.TileManager;
 
 public class GamePanel extends JPanel implements Runnable{
 	

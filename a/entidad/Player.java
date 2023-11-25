@@ -9,8 +9,8 @@ import java.security.Key;
 
 import javax.imageio.ImageIO;
 
-import Main.GamePanel;
-import Main.KeyHandler;
+import a.Main.GamePanel;
+import a.Main.KeyHandler;
 
 public class Player extends Entity {
 

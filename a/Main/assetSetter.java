@@ -1,4 +1,4 @@
-package Main;
+package a.Main;
 
 import object.OBJ_Chest;
 import object.OBJ_Door;
