@@ -1,0 +1,21 @@
+package Main;
+
+import object.OBJ_Key;
+
+public class assetSetter {
+	
+	GamePanel gp;
+	
+	public assetSetter (GamePanel gp) {
+		this.gp = gp;
+		
+	}
+	
+	public void setObject() {
+		
+		gp.obj[0] = new OBJ_Key();
+		
+		
+	}
+
+}
