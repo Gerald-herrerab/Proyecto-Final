@@ -62,11 +62,83 @@ public class CollisionCheck {
 				entidad.collisionOn = true;
 				
 			}
-			break; 
-			
+			break; 	
 		}
 		
+	}
+	public int checkObjects(Entity entidad, boolean player) {
 		
-	} 
+		int index = 999;
+		
+		for(int i = 0; i < gp.obj.length; i++) {
+			if(gp.obj[i] != null) {
+				
+				//obtener la posición del área sólida y vacía
+				
+				entidad.solidArea.x = entidad.worldX + entidad.solidArea.x;
+				entidad.solidArea.y = entidad.worldY + entidad.solidArea.y;
+				
+				//obtener la posición del área sólida de los objetos
+				
+				gp.obj[i].solidArea.x = gp.obj[i].worldX + gp.obj[i].solidArea.x;
+				gp.obj[i].solidArea.y = gp.obj[i].worldY + gp.obj[i].solidArea.y;
+				
+				switch(entidad.direccion) {
+				case "up":
+					entidad.solidArea.y -= entidad.speed;
+					if(entidad.solidArea.intersects (gp.obj[i].solidArea)) {
+						if(gp.obj[i].collision == true) {
+							entidad.collisionOn = true;
+						}
+						if(player == true) {
+							index = i;
+						}
+					}
+					break;
+				case "down":
+					entidad.solidArea.y += entidad.speed;
+					if(entidad.solidArea.intersects (gp.obj[i].solidArea)) {
+						if(gp.obj[i].collision == true) {
+							entidad.collisionOn = true;
+						}
+						if(player == true) {
+							index = i;
+						}
+					}
+					break;
+				case "left":
+					entidad.solidArea.x -= entidad.speed;
+					if(entidad.solidArea.intersects (gp.obj[i].solidArea)) {
+						if(gp.obj[i].collision == true) {
+							entidad.collisionOn = true;
+						}
+						if(player == true) {
+							index = i;
+						}
+					}
+					break;
+				case "rigth":
+					entidad.solidArea.x += entidad.speed;
+					if(entidad.solidArea.intersects (gp.obj[i].solidArea)) {
+						if(gp.obj[i].collision == true) {
+							entidad.collisionOn = true;
+						}
+						if(player == true) {
+							index = i;
+						}
+					}
+					break;
+				}
+				entidad.solidArea.x = entidad.solidAreaDefaultX;
+				entidad.solidArea.y = entidad.solidAreaDefaultY;
+				gp.obj[i].solidArea.x = gp.obj[i].solidAreaDefaultX;
+				gp.obj[i].solidArea.y = gp.obj[i].solidAreaDefaultY;
+				
+			}
+		}
+		
+		return index;
+		
+	}
 
 }

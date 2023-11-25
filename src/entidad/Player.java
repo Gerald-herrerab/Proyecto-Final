@@ -16,10 +16,9 @@ public class Player extends Entity {
 
     GamePanel gp;
     KeyHandler KeyH;
-    
     public final int screenX;
     public final int screenY;
-    
+    int hasKey = 0;
     
 
     public Player (GamePanel gp, KeyHandler KeyH) {
@@ -32,9 +31,11 @@ public class Player extends Entity {
         
         solidArea = new Rectangle();
         solidArea.x = 8;
-        solidArea.y = 8;
-        solidArea.width = 24;
-        solidArea.height = 24;
+        solidArea.y = 16;
+        solidAreaDefaultX = solidArea.x;
+        solidAreaDefaultY = solidArea.y;
+        solidArea.width = 32;
+        solidArea.height = 32;
         
         
         setDefaultValues();
@@ -47,7 +48,7 @@ public class Player extends Entity {
 
         worldX = gp.tileSize * 23;
         worldY = gp.tileSize * 21;
-        speed = 4;
+        speed = 10;
         direccion = "down";
 
 
@@ -96,6 +97,14 @@ public class Player extends Entity {
             collisionOn = false;
             gp.coCheck.checkTile(this);
             
+            //comprobar la colicion del objecto
+            
+            int objIndex = gp.coCheck.checkObjects(this, true);
+            pickUpObject(objIndex);
+            
+            
+            
+            
             //si la colicion es falsa el jugador puede moverse
             
             if(collisionOn == false) {
@@ -122,10 +131,40 @@ public class Player extends Entity {
     		
             }
 
-        }
-
+        }   	
+//		else { 
+//			counter++;
+//				if(counter2 == 20) {
+//  				spriteNum = 1;
+//					couenter2 = 1;
+//				}
+//			}
+    } 
+    
+    public void pickUpObject(int i) {
+    	
+    	if(i != 999) {
+    		
+    		String objectName = gp.obj[i].name;
+    		switch(objectName) {
+    		case "Key":
+    			hasKey++;
+    			gp.obj[i] = null;
+    			System.out.println("Key:"+hasKey);
+    			break;
+    		case "Door":
+    			if(hasKey > 0) {
+    				gp.obj[i] = null;
+    				hasKey--;
+    			}
+    			System.out.println("Key:"+hasKey);
+    			break;
+    		}
+    	}
+    	
     }
-
+    	
+    	
     public void draw (Graphics2D g2) {
 
       BufferedImage image = null;
@@ -168,6 +207,6 @@ public class Player extends Entity {
       g2.drawImage(image, screenX, screenY, gp.tileSize, gp.tileSize,  null);
 
 
-    }
-    
+}
+
 }
