@@ -33,16 +33,16 @@ public class TileManager {
 	}
 	
 	public void getTileImage() {
-		setup(0, "grass", false);
-		setup(1, "wall", false);
-		setup(2, "water", true);
-		setup(3, "earth", false);
-		setup(4, "tree", true);
-		setup(5, "sand", false);
-		setup(6, "grass", false);
-		setup(7, "grass", false);
-		setup(8, "grass", false);
-		setup(9, "grass", false);
+		setup(0, "grass00", false);
+		setup(1, "grass00", false);
+		setup(2, "grass00", false);
+		setup(3, "grass00", false);
+		setup(4, "grass00", false);
+		setup(5, "grass00", false);
+		setup(6, "grass00", false);
+		setup(7, "grass00", false);
+		setup(8, "grass00", false);
+		setup(9, "grass00", false);
 		
 		setup(10, "grass00", false);
 		setup(11, "grass01", false);
@@ -169,19 +169,3 @@ public class TileManager {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
