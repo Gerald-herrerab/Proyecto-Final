@@ -1,5 +1,6 @@
 /entidad/
 /main/
+<<<<<<< HEAD
 /maps/
 /object/
 /objects/
@@ -7,3 +8,7 @@
 /sound/
 /tile/
 /tiles/
+=======
+/object/
+/tile/
+>>>>>>> Benjamín-Cantero
