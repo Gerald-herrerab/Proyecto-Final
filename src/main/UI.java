@@ -52,7 +52,7 @@ public class UI {
 			int x;
 			int y;
 			
-			text = "fuente del tesoro ";
+			text = "fuente del tesoro";
 			textLength = (int)g2.getFontMetrics().getStringBounds(text, g2). getWidth();
 			x = gp.screenWidth/2 - textLength/2;
 			y = gp.screenHeigth/2 - (gp.tileSize*3);
