@@ -4,8 +4,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.RenderingHints.Key;
-
 import entidad.Player;
 import object.SuperObject;
 import tile.TileManager;
@@ -29,17 +27,20 @@ public class GamePanel extends JPanel implements Runnable{
     
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50; 
-    public final int worldHeigth = tileSize * maxWorldCol;
-    public final int worldWidth = tileSize * maxWorldRow;
     
     
     int FPS = 60;
 
     TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
-    Thread gameThread;
+    Sound music = new Sound();
+    Sound se = new Sound();
     public CollisionCheck coCheck = new CollisionCheck(this);
     public assetSetter aSetter = new assetSetter(this);
+    public UI ui = new UI(this); 
+    Thread gameThread;
+    
+    //Entidad y objetos 
     public Player player = new Player (this, keyH);
     public SuperObject obj[] = new SuperObject[10];
     
@@ -58,6 +59,9 @@ public class GamePanel extends JPanel implements Runnable{
     
     public void setupGame () {
     	aSetter.setObject();
+    	
+    	playMusic(0);
+    	
     }
 
     public void startGameThread () {
@@ -117,13 +121,6 @@ public class GamePanel extends JPanel implements Runnable{
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
 
-        //DEBUG
-        long drawStart = 0;
-        if (keyH.checkDrawTime == true) {
-             drawStart = System.nanoTime();
-        }
-        
-
         //TILE
         tileM.draw(g2);
         
@@ -137,21 +134,38 @@ public class GamePanel extends JPanel implements Runnable{
         
         //PLAYER
         player.draw(g2);
-
-        //DEBUG
-        if (keyH.checkDrawTime == true) {
-        long drawEnd = System.nanoTime();
-        long passed = drawEnd - drawStart;
-        g2.setColor(Color.WHITE);
-        g2.drawString("Draw Time: "+ passed, 10, 400);
-        System.out.println("Draw time: "+ passed);
-        }
-
+        
+        // UI
+        ui.draw(g2);
 
         g2.dispose();
+    }
+    
+    public void playMusic(int i) {
+    	music.setFile(i);
+    	music.play();
+    	music.loop();
+    }
+    
+    public void stopMusic() {
+    	music.stop();
+    	
+    }
+    
+    public void playSE(int i) {
+    	
+    	se.setFile(i);
+    	se.play();
     }
 
 
 
     
 }
+
+
+
+
+
+
+

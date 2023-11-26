@@ -10,7 +10,7 @@ public static void main(String [] arg){
     window.setResizable(false) ;
     window.setTitle("las locas aventuras de juan maziso") ;
 
-    GamePanel gamePanel = new GamePanel();
+    GamePanel gamePanel = new GamePanel(gp);
     window.add(gamePanel);
 
     window.pack();
