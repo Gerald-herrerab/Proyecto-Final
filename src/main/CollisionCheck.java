@@ -1,6 +1,7 @@
 package main;
 
 import entidad.Entity;
+import entidad.Player;
 
 public class CollisionCheck {
 	
@@ -137,9 +138,115 @@ public class CollisionCheck {
 			}
 		}
 		
+		return index;		
+	}
+	
+	//check de colicion con entidades 
+	public int checkEntity(Entity entidad, Entity[] target) {
+		
+		int index = 999;
+		
+		for(int i = 0; i < target.length; i++) {
+			if(target[i] != null) {
+				
+				//obtener la posición del área sólida y vacía
+				
+				entidad.solidArea.x = entidad.worldX + entidad.solidArea.x;
+				entidad.solidArea.y = entidad.worldY + entidad.solidArea.y;
+				
+				//obtener la posición del área sólida de los objetos
+				
+				target[i].solidArea.x = target[i].worldX + target[i].solidArea.x;
+				target[i].solidArea.y = target[i].worldY + target[i].solidArea.y;
+				
+				switch(entidad.direccion) {
+				case "up":
+					entidad.solidArea.y -= entidad.speed;
+					if(entidad.solidArea.intersects (target[i].solidArea)) {
+						entidad.collisionOn = true;
+						index = i;
+					}
+					break;
+				case "down":
+					entidad.solidArea.y += entidad.speed;
+					if(entidad.solidArea.intersects (target[i].solidArea)) {
+						entidad.collisionOn = true;
+						index = i;
+					}
+					break;
+				case "left":
+					entidad.solidArea.x -= entidad.speed;
+					if(entidad.solidArea.intersects (target[i].solidArea)) {
+						entidad.collisionOn = true;
+						index = i;
+					}
+					break;
+				case "rigth":
+					entidad.solidArea.x += entidad.speed;
+					if(entidad.solidArea.intersects (target[i].solidArea)) {
+						entidad.collisionOn = true;
+						index = i;
+					}
+					break;
+				}
+				entidad.solidArea.x = entidad.solidAreaDefaultX;
+				entidad.solidArea.y = entidad.solidAreaDefaultY;
+				target[i].solidArea.x = target[i].solidAreaDefaultX;
+				target[i].solidArea.y = target[i].solidAreaDefaultY;
+				
+			}
+		}
+		
 		return index;
 		
 	}
+	//check colicion npc a jugador
+	public void checkPlayer(Entity entidad ) {
+		
+		//obtener la posición del área sólida y vacía
+		
+		entidad.solidArea.x = entidad.worldX + entidad.solidArea.x;
+		entidad.solidArea.y = entidad.worldY + entidad.solidArea.y;
+		
+		//obtener la posición del área sólida de los objetos
+		
+		gp.player.solidArea.x = gp.player.worldX + gp.player.solidArea.x;
+		gp.player.solidArea.y = gp.player.worldY + gp.player.solidArea.y;
+		
+		switch(entidad.direccion) {
+		case "up":
+			entidad.solidArea.y -= entidad.speed;
+			if(entidad.solidArea.intersects (gp.player.solidArea)) {
+				entidad.collisionOn = true;
+
+			}
+			break;
+		case "down":
+			entidad.solidArea.y += entidad.speed;
+			if(entidad.solidArea.intersects (gp.player.solidArea)) {
+				entidad.collisionOn = true;
+			}
+			break;
+		case "left":
+			entidad.solidArea.x -= entidad.speed;
+			if(entidad.solidArea.intersects (gp.player.solidArea)) {
+				entidad.collisionOn = true;
+			}
+			break;
+		case "rigth":
+			entidad.solidArea.x += entidad.speed;
+			if(entidad.solidArea.intersects (gp.player.solidArea)) {
+				entidad.collisionOn = true;
+			}
+			break;
+		}
+		entidad.solidArea.x = entidad.solidAreaDefaultX;
+		entidad.solidArea.y = entidad.solidAreaDefaultY;
+		gp.player.solidArea.x = gp.player.solidAreaDefaultX;
+		gp.player.solidArea.y = gp.player.solidAreaDefaultY;
+		
+	}
+
 
 }
 

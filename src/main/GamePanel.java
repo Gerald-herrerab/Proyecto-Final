@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+
+import entidad.Entity;
 import entidad.Player;
 import object.SuperObject;
 import tile.TileManager;
@@ -32,7 +34,7 @@ public class GamePanel extends JPanel implements Runnable{
     int FPS = 60;
 
     TileManager tileM = new TileManager(this);
-    KeyHandler keyH = new KeyHandler(this);
+    public KeyHandler keyH = new KeyHandler(this);
     Sound music = new Sound();
     Sound se = new Sound();
     public CollisionCheck coCheck = new CollisionCheck(this);
@@ -43,12 +45,14 @@ public class GamePanel extends JPanel implements Runnable{
     //Entidad y objetos 
     public Player player = new Player (this, keyH);
     public SuperObject obj[] = new SuperObject[10];
+    public Entity npc[] = new Entity[10];
     
     
     //GAME PAUSE
     public int GameState;
     public final int PlayState = 1;
     public final int PauseState = 2;
+    public final int dialogueState = 3;
 
 
     public GamePanel () {
@@ -62,7 +66,7 @@ public class GamePanel extends JPanel implements Runnable{
     
     public void setupGame () {
     	aSetter.setObject();
-    	
+    	aSetter.setNPC();
     	playMusic(0);
     	GameState = PlayState;
     }
@@ -116,8 +120,16 @@ public class GamePanel extends JPanel implements Runnable{
     public void update () {
 
         if (GameState == PlayState) {
-
+        	//player
             player.update();
+            
+            //NPC
+            for(int i = 0; i < npc.length; i++) {
+            	if(npc[i] != null) {
+            		npc[i].update();
+            		
+            	}
+            }
 
         }
         if (GameState == PauseState) {
@@ -149,7 +161,12 @@ public class GamePanel extends JPanel implements Runnable{
         		obj[i].draw(g2, this);
         	}
         }
-        
+        //NPC
+        for(int i = 0; i < npc.length; i++) {
+        	if(npc[i] != null) {
+        		npc[i].draw(g2);
+        	}
+        }
         
         //PLAYER
         player.draw(g2);

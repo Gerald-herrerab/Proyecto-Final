@@ -15,7 +15,6 @@ import main.UtilityTool;
 
 public class Player extends Entity {
 
-    GamePanel gp;
     KeyHandler KeyH;
     public final int screenX;
     public final int screenY;
@@ -23,8 +22,9 @@ public class Player extends Entity {
     
 
     public Player (GamePanel gp, KeyHandler KeyH) {
-
-        this.gp = gp;
+    	
+    	super(gp);
+    	
         this.KeyH = KeyH;
         
         screenX = gp.screenWidth/2;
@@ -111,7 +111,9 @@ public class Player extends Entity {
             int objIndex = gp.coCheck.checkObjects(this, true);
             pickUpObject(objIndex);
             
-            
+            //check NPC colicion
+            int npcIndex = gp.coCheck.checkEntity(this, gp.npc);
+            interactNPC(npcIndex);
             
             
             //si la colicion es falsa el jugador puede moverse
@@ -154,6 +156,17 @@ public class Player extends Entity {
     	if (i  != 999) {
             
         }
+    }
+    
+    public void interactNPC(int i) {
+    	if (i  != 999) {
+    		
+    		if(gp.keyH.enterPressed == true) {
+        		gp.GameState = gp.dialogueState;
+        		gp.npc[i].speak();
+    		}
+        }
+    	gp.keyH.enterPressed = false;
     }
     	
     	
