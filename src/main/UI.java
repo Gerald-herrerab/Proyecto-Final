@@ -48,16 +48,28 @@ public class UI {
         if (gp.GameState == gp.PlayState) {
 
         }
+<<<<<<< HEAD
         	
+=======
+        
+>>>>>>> 0b0c03bd91745ad90429a2daa19e87428cf6b8cc
         //estado de pausa
         if (gp.GameState == gp.PauseState) {
             DrawPauseScreen();
         }
+<<<<<<< HEAD
 
                 
         //estado de dialogo
         if(gp.GameState == gp.dialogueState) {
             drawDialogueScreen();
+=======
+        
+        //estado de dialogo
+        if(gp.GameState == gp.dialogueState) {
+        	drawDialogueScreen();
+        }
+>>>>>>> 0b0c03bd91745ad90429a2daa19e87428cf6b8cc
     }
     }
     
@@ -70,6 +82,7 @@ public class UI {
 
         g2.drawString(text, x, y);
     }
+<<<<<<< HEAD
 
         
     public void drawDialogueScreen() {
@@ -109,6 +122,46 @@ public void drawSubWindow(int x, int y, int width, int higth) {
         
         
 }
+=======
+    
+    public void drawDialogueScreen() {
+    	
+    	//ventana
+    	int x = gp.tileSize*2;
+    	int y = gp.tileSize/2;
+    	int width = gp.screenWidth - (gp.tileSize*4);
+    	int higth = gp.tileSize*4;
+    	
+    	drawSubWindow(x, y, width, higth);
+    	
+    	g2.setFont(g2.getFont().deriveFont(Font.PLAIN,28F));
+    	x += gp.tileSize;
+    	y += gp.tileSize;
+    	
+    	for(String line : currentDialogue.split("\n")) {
+    		g2.drawString(line, x, y);
+    		
+    	}
+    	g2.drawString(currentDialogue, x, y);
+    }
+    
+    public void drawSubWindow(int x, int y, int width, int higth) {
+    	
+    	Color c = new Color(0,0,0,200);
+    	g2.setColor(c);
+    	g2.fillRoundRect(x, y, width, higth, 35, 35);
+    	
+    	c = new Color(255,255, 255);
+    	g2.setColor(c);
+    	g2.setStroke(new BasicStroke(5));
+    	g2.drawRoundRect(x+5, y+5, width-10, higth-10, 25, 25);
+    	
+    	
+    	
+    	
+    	
+    }
+>>>>>>> 0b0c03bd91745ad90429a2daa19e87428cf6b8cc
     public int getXforCenterText(String text){
                 int length = (int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
 
@@ -116,3 +169,9 @@ public void drawSubWindow(int x, int y, int width, int higth) {
         return x;
     }
 }
+
+
+
+
+
+

@@ -39,6 +39,13 @@ public class NPC_OldMan extends Entity {
 	}
 
     
+    public void setDialogue() {
+    	dialogues[0]= "Hola Mamahuevaso!";
+    	dialogues[1]= "Que te trae por estas zonas gancho";
+    	dialogues[2]= "algun dialogo de aventuras xd";
+    	dialogues[3]= "un chao del npichi";
+    }
+    
     public void setAction() {
     	
     	actionLockCounter ++;
@@ -63,9 +70,19 @@ public class NPC_OldMan extends Entity {
     	}
     	
     }
+<<<<<<< HEAD
 	public void speak() {
 		super.speak();
 	}
+=======
+    
+    public void speak() {
+    	super.speak();
+
+    }
+    
+
+>>>>>>> 0b0c03bd91745ad90429a2daa19e87428cf6b8cc
 }
 
 
