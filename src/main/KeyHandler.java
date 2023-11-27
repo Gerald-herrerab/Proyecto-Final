@@ -80,10 +80,6 @@ public class KeyHandler implements KeyListener{
         }
     }
     
-<<<<<<< HEAD
-=======
-
->>>>>>> 0b0c03bd91745ad90429a2daa19e87428cf6b8cc
     @Override
     public void keyReleased(KeyEvent e) {
         int code = e.getKeyCode();

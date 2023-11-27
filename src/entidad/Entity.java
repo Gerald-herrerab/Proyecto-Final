@@ -23,11 +23,7 @@ public class Entity {
     public int solidAreaDefaultX, solidAreaDefaultY;
     public boolean collisionOn = false;
     public int actionLockCounter = 0;
-<<<<<<< HEAD
-	String dialogues[] = new String[20];
-=======
     String dialogues[] = new String[20];
->>>>>>> 0b0c03bd91745ad90429a2daa19e87428cf6b8cc
     int dialogueIndex = 0;
     
     public Entity(GamePanel gp) {
@@ -36,31 +32,6 @@ public class Entity {
     }
     
     public void setAction() {}
-<<<<<<< HEAD
-	public void speak() {
-            
-		if(dialogues[dialogueIndex] == null) {
-				dialogueIndex = 0;
-		}
-		gp.ui.currentDialogue = dialogues[dialogueIndex];
-		dialogueIndex++;
-		
-		switch(gp.player.direccion) {
-		case "up":
-				direccion = "down";
-				break;
-		case "down":
-				direccion = "up";
-				break;
-		case "left":
-				direccion = "rigth";
-				break;
-		case "rigth":
-				direccion = "left";
-				break;
-		}
-}
-=======
     public void speak() {
     	
     	if(dialogues[dialogueIndex] == null) {
@@ -84,7 +55,6 @@ public class Entity {
     		break;
     	}
     }
->>>>>>> 0b0c03bd91745ad90429a2daa19e87428cf6b8cc
     public void update() {
     	
     	setAction();
