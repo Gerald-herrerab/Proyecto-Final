@@ -15,6 +15,7 @@ public class NPC_OldMan extends Entity {
 		speed = 1;
 		
 		getImage();
+		setDialogue();
 	}
 	
     public void getImage() {
@@ -28,6 +29,13 @@ public class NPC_OldMan extends Entity {
         right1 = setup("/npc/oldman_right_1");
         right2 = setup("/npc/oldman_right_2");
 
+    }
+    
+    public void setDialogue() {
+    	dialogues[0]= "Hola Mamahuevaso!";
+    	dialogues[1]= "Que te trae por estas zonas gancho";
+    	dialogues[2]= "algun dialogo de aventuras xd";
+    	dialogues[3]= "un chao del npichi";
     }
     
     public void setAction() {
@@ -48,11 +56,16 @@ public class NPC_OldMan extends Entity {
         		direccion = "left";
         	}
         	if(i > 75 && i <= 100) {
-        		direccion = "right";
+        		direccion = "rigth";
         	}
         	actionLockCounter = 0;
     	}
     	
+    }
+    
+    public void speak() {
+    	super.speak();
+
     }
     
 

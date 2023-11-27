@@ -7,7 +7,7 @@ public class KeyHandler implements KeyListener{
 
     GamePanel gp;
 
-    public boolean upPressed, downPressed, leftPressed, rigthpressed;
+    public boolean upPressed, downPressed, leftPressed, rigthpressed, enterPressed;
     //DEBUG
     boolean checkDrawTime = false;
     
@@ -23,43 +23,63 @@ public class KeyHandler implements KeyListener{
     @Override
     public void keyPressed(KeyEvent e) {
 
+    	//estado del juego
         int code = e.getKeyCode(); 
 
-        if (code == KeyEvent.VK_W) {
-            upPressed = true;
+        if(gp.GameState == gp.PlayState) {
+        	
+            if (code == KeyEvent.VK_W) {
+                upPressed = true;
 
-        }
-        if (code == KeyEvent.VK_S) {
-            downPressed = true;
+            }
+            if (code == KeyEvent.VK_S) {
+                downPressed = true;
+                
+            }
+            if (code == KeyEvent.VK_A) {
+                leftPressed = true;
+                
+            }
+            if (code == KeyEvent.VK_D) {
+                rigthpressed = true;
+                
+            }
+            if (code == KeyEvent.VK_P) {
+                gp.GameState = gp.PauseState;
             
-        }
-        if (code == KeyEvent.VK_A) {
-            leftPressed = true;
+            }
+            if (code == KeyEvent.VK_ENTER) {
+            	enterPressed = true;
             
+            }
+             
+                    //DEBUG
+            if (code == KeyEvent.VK_T) {
+                if(checkDrawTime == false){
+                    checkDrawTime = true;
+                    }
+            else if ( checkDrawTime == true) {
+                        checkDrawTime = false;
+                    }
+            }
         }
-        if (code == KeyEvent.VK_D) {
-            rigthpressed = true;
-            
-        }
-        if (code == KeyEvent.VK_P) {
         
-         if (gp.GameState == gp.PlayState) {
-            gp.GameState = gp.PauseState;
-         }   
-         else if (gp.GameState == gp.PauseState) {
-            gp.GameState = gp.PlayState;
-         }
+        //estado de pausa
+        else if(gp.GameState == gp.PauseState) {
+            if (code == KeyEvent.VK_P) {
+                gp.GameState = gp.PlayState;
+            
+            }
         }
-                //DEBUG
-        if (code == KeyEvent.VK_T) {
-            if(checkDrawTime == false){
-                checkDrawTime = true;
-                }
-        else if ( checkDrawTime == true) {
-                    checkDrawTime = false;
-                }
+        
+        //estado del dialogo
+        else if(gp.GameState == gp.dialogueState) {
+        	if(code == KeyEvent.VK_ENTER) {
+        		gp.GameState = gp.PlayState;
+        	}
         }
     }
+    
 
     @Override
     public void keyReleased(KeyEvent e) {
