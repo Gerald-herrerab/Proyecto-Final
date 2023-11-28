@@ -48,6 +48,14 @@ public class GamePanel extends JPanel implements Runnable{
     public Player player = new Player (this, keyH);
     public SuperObject obj[] = new SuperObject[10];
     public Entity npc[] = new Entity[10];
+<<<<<<< HEAD
+=======
+    public Entity monster[] = new Entity[20];
+
+
+    ArrayList<Entity> entityList = new ArrayList<>();
+    
+>>>>>>> 0813235112290c37b567c6e989af2bf89029e20a
     
     
     //GAME STATE
@@ -70,6 +78,8 @@ public class GamePanel extends JPanel implements Runnable{
     public void setupGame () {
     	aSetter.setObject();
     	aSetter.setNPC();
+        aSetter.setMonster();
+
     	//playMusic(0);
     	GameState = titleState;
     }
@@ -133,7 +143,12 @@ public class GamePanel extends JPanel implements Runnable{
             		
             	}
             }
+            for (int i = 0; i<monster.length; i++){
+                if(monster[i]!=null){
+                    monster[i].update();
+                }
 
+            }
         }
         if (GameState == PauseState) {
             
@@ -162,6 +177,53 @@ public class GamePanel extends JPanel implements Runnable{
         
         //OTROS
         else {
+<<<<<<< HEAD
+=======
+        	//Tile
+        	tileM.draw(g2);
+        	
+        	//Add Entities to the list 
+        	entityList.add(player);
+        	
+        	for(int i = 0; i < npc.length; i++) {
+        		if(npc[i] != null) {
+        			entityList.add(npc[i]);
+        		}
+        	}
+        	
+        	for(int i = 0; i < obj.length; i++) {
+        		if(obj[i] != null ) {
+        			entityList.add(obj[i]);
+        		}
+        	}
+
+            for(int i = 0; i < monster.length; i++) {
+        		if(monster[i] != null ) {
+        			entityList.add(monster[i]);
+        		}
+        	}
+        	
+        	//Sort
+        	Collections.sort(entityList, new Comparator<Entity>() {
+
+				@Override
+				public int compare(Entity e1, Entity e2) {
+					
+					int result = Integer.compare(e1.worldY, e2.worldY);
+					return result;
+				}
+        		
+        	});
+        	
+        	//Draw Entities
+        	for(int i = 0; i < entityList.size(); i++) {
+        		entityList.get(i).draw(g2);
+        	}
+        	//Empty Entity 
+        	for(int i = 0; i < entityList.size(); i++) {
+        		entityList.remove(i);
+        	}
+>>>>>>> 0813235112290c37b567c6e989af2bf89029e20a
         	
             //TILE
             tileM.draw(g2);
