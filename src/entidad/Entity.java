@@ -23,6 +23,11 @@ public class Entity {
     public int solidAreaDefaultX, solidAreaDefaultY;
     public boolean collisionOn = false;
     public int actionLockCounter = 0;
+	public boolean invicible = false;
+	public int invicibleCounter = 0;
+	public int type; // 0 = player, 1 = NPC , 2 = Monstruo
+
+
     String dialogues[] = new String[20];
     int dialogueIndex = 0;
 	public BufferedImage image, image2, image3;
@@ -69,7 +74,18 @@ public class Entity {
     	collisionOn = false;
     	gp.coCheck.checkTile(this);
     	gp.coCheck.checkObjects(this, false);
-    	gp.coCheck.checkPlayer(this);
+		gp.coCheck.checkEntity(this, gp.npc);
+		gp.coCheck.checkEntity(this, gp.monster);
+    	boolean contactPlayer = gp.coCheck.checkPlayer(this);
+
+		if (this.type == 2 && contactPlayer == true) {
+			if (gp.player.invicible == false) {
+				// WE CAN GIVE DAMAGE
+				gp.player.life -= 1;
+				gp.player.invicible = true;
+			}
+		}
+
     	
         if(collisionOn == false) {
         	
