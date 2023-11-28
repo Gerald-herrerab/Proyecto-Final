@@ -5,9 +5,9 @@ import java.util.Random;
 import entidad.Entity;
 import main.GamePanel;
 
-public class MOM_GreenSlime extends Entity{
+public class MOM_GReenSlime extends Entity{
 
-    public MOM_GreenSlime(GamePanel gp) {
+    public MOM_GReenSlime(GamePanel gp) {
         super(gp);
         type = 2;
         name = "Green Slime";
