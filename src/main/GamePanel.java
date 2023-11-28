@@ -46,6 +46,12 @@ public class GamePanel extends JPanel implements Runnable{
     public Player player = new Player (this, keyH);
     public Entity obj[] = new Entity[10];
     public Entity npc[] = new Entity[10];
+<<<<<<< HEAD
+=======
+    public Entity monster[] = new Entity[20];
+
+
+>>>>>>> Benjamín-Cantero
     ArrayList<Entity> entityList = new ArrayList<>();
     
     
@@ -70,6 +76,8 @@ public class GamePanel extends JPanel implements Runnable{
     public void setupGame () {
     	aSetter.setObject();
     	aSetter.setNPC();
+        aSetter.setMonster();
+
     	//playMusic(0);
     	GameState = titleState;
     }
@@ -133,7 +141,12 @@ public class GamePanel extends JPanel implements Runnable{
             		
             	}
             }
+            for (int i = 0; i<monster.length; i++){
+                if(monster[i]!=null){
+                    monster[i].update();
+                }
 
+            }
         }
         if (GameState == PauseState) {
             
@@ -179,7 +192,16 @@ public class GamePanel extends JPanel implements Runnable{
         			entityList.add(obj[i]);
         		}
         	}
+<<<<<<< HEAD
         	
+=======
+
+            for(int i = 0; i < monster.length; i++) {
+        		if(monster[i] != null ) {
+        			entityList.add(monster[i]);
+        		}
+        	}
+>>>>>>> Benjamín-Cantero
         	
         	//Sort
         	Collections.sort(entityList, new Comparator<Entity>() {
