@@ -15,7 +15,7 @@ public static void main(String [] arg){
 
     window.pack();
 
-
+//hola este afdsfdskfskgñs
     window.setLocationRelativeTo(null) ; 
     window.setVisible(true) ;
 
