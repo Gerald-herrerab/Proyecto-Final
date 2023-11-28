@@ -130,37 +130,6 @@ public class CollisionCheck {
 				target[i].solidArea.y = target[i].worldY + target[i].solidArea.y;
 				
 				switch(entidad.direccion) {
-<<<<<<< HEAD
-				case "up":
-					entidad.solidArea.y -= entidad.speed;
-					if(entidad.solidArea.intersects (target[i].solidArea)) {
-						entidad.collisionOn = true;
-						index = i;
-					}
-					break;
-				case "down":
-					entidad.solidArea.y += entidad.speed;
-					if(entidad.solidArea.intersects (target[i].solidArea)) {
-						entidad.collisionOn = true;
-						index = i;
-					}
-					break;
-				case "left":
-					entidad.solidArea.x -= entidad.speed;
-					if(entidad.solidArea.intersects (target[i].solidArea)) {
-						entidad.collisionOn = true;
-						index = i;
-					}
-					break;
-				case "rigth":
-					entidad.solidArea.x += entidad.speed;
-					if(entidad.solidArea.intersects (target[i].solidArea)) {
-						entidad.collisionOn = true;
-						index = i;
-					}
-					break;
-				}
-=======
 				case "up": entidad.solidArea.y -= entidad.speed; break;
 			
 				case "down": entidad.solidArea.y += entidad.speed; break;
@@ -179,7 +148,6 @@ public class CollisionCheck {
 				}
 
 
->>>>>>> Benjamín-Cantero
 				entidad.solidArea.x = entidad.solidAreaDefaultX;
 				entidad.solidArea.y = entidad.solidAreaDefaultY;
 				target[i].solidArea.x = target[i].solidAreaDefaultX;
@@ -192,15 +160,10 @@ public class CollisionCheck {
 		
 	}
 	//check colicion npc a jugador
-<<<<<<< HEAD
-	public void checkPlayer(Entity entidad ) {
-		
-=======
 	public boolean checkPlayer(Entity entidad) {
 
 		boolean contactPlayer = false; 
 
->>>>>>> Benjamín-Cantero
 		//obtener la posición del área sólida y vacía
 		
 		entidad.solidArea.x = entidad.worldX + entidad.solidArea.x;
@@ -212,34 +175,6 @@ public class CollisionCheck {
 		gp.player.solidArea.y = gp.player.worldY + gp.player.solidArea.y;
 		
 		switch(entidad.direccion) {
-<<<<<<< HEAD
-		case "up":
-			entidad.solidArea.y -= entidad.speed;
-			if(entidad.solidArea.intersects (gp.player.solidArea)) {
-				entidad.collisionOn = true;
-
-			}
-			break;
-		case "down":
-			entidad.solidArea.y += entidad.speed;
-			if(entidad.solidArea.intersects (gp.player.solidArea)) {
-				entidad.collisionOn = true;
-			}
-			break;
-		case "left":
-			entidad.solidArea.x -= entidad.speed;
-			if(entidad.solidArea.intersects (gp.player.solidArea)) {
-				entidad.collisionOn = true;
-			}
-			break;
-		case "rigth":
-			entidad.solidArea.x += entidad.speed;
-			if(entidad.solidArea.intersects (gp.player.solidArea)) {
-				entidad.collisionOn = true;
-			}
-			break;
-		}
-=======
 
 		case "up":entidad.solidArea.y -= entidad.speed;break;
 
@@ -255,16 +190,12 @@ public class CollisionCheck {
 			contactPlayer = true;
 		}
 
->>>>>>> Benjamín-Cantero
 		entidad.solidArea.x = entidad.solidAreaDefaultX;
 		entidad.solidArea.y = entidad.solidAreaDefaultY;
 		gp.player.solidArea.x = gp.player.solidAreaDefaultX;
 		gp.player.solidArea.y = gp.player.solidAreaDefaultY;
 		
-<<<<<<< HEAD
-=======
 		return contactPlayer;
->>>>>>> Benjamín-Cantero
 	}
 
 

@@ -3,14 +3,6 @@ package main;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
-<<<<<<< HEAD
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
-import java.text.DecimalFormat;
-
-import object.OBJ_Key;
-
-=======
 import java.awt.FontFormatException;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -19,38 +11,25 @@ import java.io.IOException;
 import java.io.InputStream;
 import entidad.Entity;
 import object.OBJ_Heart;
->>>>>>> Benjamín-Cantero
 public class UI {
 
     GamePanel gp;
     Graphics2D g2;
-<<<<<<< HEAD
-    Font arial_40,  arial_80B;
-=======
     Font maruMonica, purisaB;
     BufferedImage heart_full, heart_half, heart_blank;
->>>>>>> Benjamín-Cantero
     public boolean messageOn = false;
     public String message = "";
     int messageCounter = 0;
     public boolean gameFinish = false;
     public String currentDialogue = "";
-<<<<<<< HEAD
-=======
     public int commandNum = 0;
     public int titleScreenState = 0; //0: es la primera pantalla y 1: es la segunda 
->>>>>>> Benjamín-Cantero
 
 
 
 
     public UI(GamePanel gp) {
         this.gp = gp;
-<<<<<<< HEAD
-
-        arial_40 = new Font("Arial", Font.PLAIN, 40);
-        arial_80B = new Font("Arial", Font.BOLD, 80);
-=======
         
         try {
             InputStream is = getClass().getResourceAsStream("/font/x12y16pxMaruMonica.ttf");
@@ -74,7 +53,6 @@ public class UI {
      heart_full = heart.image;
      heart_half = heart.image2;
      heart_blank = heart.image3;
->>>>>>> Benjamín-Cantero
 
 
     }
@@ -88,23 +66,6 @@ public class UI {
 
     public void draw(Graphics2D g2) {
         this.g2 = g2;
-<<<<<<< HEAD
-        g2.setFont(arial_40);
-        g2.setColor(Color.white);
-
-        // estado de juego
-        if (gp.GameState == gp.PlayState) {
-
-        }
-        
-        //estado de pausa
-        if (gp.GameState == gp.PauseState) {
-            DrawPauseScreen();
-        }
-        
-        //estado de dialogo
-        if(gp.GameState == gp.dialogueState) {
-=======
         g2.setFont(maruMonica);
         //g2.setFont(purisaB);
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
@@ -130,14 +91,10 @@ public class UI {
         //Dialogue State
         if(gp.GameState == gp.dialogueState) {
         	drawPlayerLife();
->>>>>>> Benjamín-Cantero
         	drawDialogueScreen();
         }
     }
     
-<<<<<<< HEAD
-    
-=======
     public void drawPlayerLife() {
     	
     	//gp.player.life = 5;   cambiar la vida 
@@ -266,7 +223,6 @@ public class UI {
     	}
     
     }   
->>>>>>> Benjamín-Cantero
 
     public void DrawPauseScreen(){
         String text = "Pausa";
@@ -287,11 +243,7 @@ public class UI {
     	
     	drawSubWindow(x, y, width, higth);
     	
-<<<<<<< HEAD
-    	g2.setFont(g2.getFont().deriveFont(Font.PLAIN,28F));
-=======
     	g2.setFont(g2.getFont().deriveFont(Font.PLAIN,32F));
->>>>>>> Benjamín-Cantero
     	x += gp.tileSize;
     	y += gp.tileSize;
     	

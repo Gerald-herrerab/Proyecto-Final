@@ -23,11 +23,6 @@ public class KeyHandler implements KeyListener{
     @Override
     public void keyPressed(KeyEvent e) {
 
-<<<<<<< HEAD
-    	//estado del juego
-        int code = e.getKeyCode(); 
-
-=======
         int code = e.getKeyCode();
         
         if(gp.ui.titleScreenState == 0) {
@@ -105,7 +100,6 @@ public class KeyHandler implements KeyListener{
         
         
     	//PLAY STATE
->>>>>>> Benjamín-Cantero
         if(gp.GameState == gp.PlayState) {
         	
             if (code == KeyEvent.VK_W) {

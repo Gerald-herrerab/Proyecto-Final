@@ -4,17 +4,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-<<<<<<< HEAD
-
-import entidad.Entity;
-import entidad.Player;
-import object.SuperObject;
-import tile.TileManager;
-
-import javax.swing.JPanel;
-import javax.swing.plaf.DimensionUIResource;
-
-=======
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -22,7 +11,6 @@ import entidad.Entity;
 import entidad.Player;
 import tile.TileManager;
 import javax.swing.JPanel;
->>>>>>> Benjamín-Cantero
 public class GamePanel extends JPanel implements Runnable{
 	
     // Ajustes de la pantalla
@@ -40,16 +28,10 @@ public class GamePanel extends JPanel implements Runnable{
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50; 
     
-<<<<<<< HEAD
-    
-    int FPS = 60;
-
-=======
     //FPS
     int FPS = 60;
 
     //System
->>>>>>> Benjamín-Cantero
     TileManager tileM = new TileManager(this);
     public KeyHandler keyH = new KeyHandler(this);
     Sound music = new Sound();
@@ -57,22 +39,11 @@ public class GamePanel extends JPanel implements Runnable{
     public CollisionCheck coCheck = new CollisionCheck(this);
     public assetSetter aSetter = new assetSetter(this);
     public UI ui = new UI(this); 
-<<<<<<< HEAD
-=======
     public EventHandler eHandler = new EventHandler(this);
->>>>>>> Benjamín-Cantero
     Thread gameThread;
     
     //Entidad y objetos 
     public Player player = new Player (this, keyH);
-<<<<<<< HEAD
-    public SuperObject obj[] = new SuperObject[10];
-    public Entity npc[] = new Entity[10];
-    
-    
-    //GAME PAUSE
-    public int GameState;
-=======
     public Entity obj[] = new Entity[10];
     public Entity npc[] = new Entity[10];
     public Entity monster[] = new Entity[20];
@@ -85,7 +56,6 @@ public class GamePanel extends JPanel implements Runnable{
     //GAME STATE
     public int GameState;
     public final int titleState = 0;
->>>>>>> Benjamín-Cantero
     public final int PlayState = 1;
     public final int PauseState = 2;
     public final int dialogueState = 3;
@@ -103,15 +73,10 @@ public class GamePanel extends JPanel implements Runnable{
     public void setupGame () {
     	aSetter.setObject();
     	aSetter.setNPC();
-<<<<<<< HEAD
-    	playMusic(0);
-    	GameState = PlayState;
-=======
         aSetter.setMonster();
 
     	//playMusic(0);
     	GameState = titleState;
->>>>>>> Benjamín-Cantero
     }
 
     public void startGameThread () {
@@ -173,16 +138,12 @@ public class GamePanel extends JPanel implements Runnable{
             		
             	}
             }
-<<<<<<< HEAD
-
-=======
             for (int i = 0; i<monster.length; i++){
                 if(monster[i]!=null){
                     monster[i].update();
                 }
 
             }
->>>>>>> Benjamín-Cantero
         }
         if (GameState == PauseState) {
             
@@ -203,30 +164,6 @@ public class GamePanel extends JPanel implements Runnable{
         if (keyH.checkDrawTime == true) {
              drawStart = System.nanoTime();
         }
-<<<<<<< HEAD
-
-        //TILE
-        tileM.draw(g2);
-        
-        //OBJECTS
-        for(int i = 0; i < obj.length; i++) {
-        	if(obj[i] != null) {
-        		obj[i].draw(g2, this);
-        	}
-        }
-        //NPC
-        for(int i = 0; i < npc.length; i++) {
-        	if(npc[i] != null) {
-        		npc[i].draw(g2);
-        	}
-        }
-        
-        //PLAYER
-        player.draw(g2);
-        
-        // UI
-        ui.draw(g2);
-=======
         
         //TITLE SCREEN 
         if(GameState == titleState) {
@@ -285,7 +222,6 @@ public class GamePanel extends JPanel implements Runnable{
             ui.draw(g2);
         	
         }
->>>>>>> Benjamín-Cantero
 
         // DEBUG
         if (keyH.checkDrawTime == true) {
