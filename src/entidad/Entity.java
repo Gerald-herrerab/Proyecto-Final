@@ -16,18 +16,20 @@ public class Entity {
     public int worldX, worldY;
     public int speed;
     public BufferedImage up1, up2, down1, down2, left1, left2, right1, right2;
-    public String direccion = "down";
+    public String direccion;
     public int spriteCounter = 0;
     public int spriteNum = 1;
     public Rectangle solidArea = new Rectangle(0, 0, 48, 48);
     public int solidAreaDefaultX, solidAreaDefaultY;
     public boolean collisionOn = false;
     public int actionLockCounter = 0;
+	public boolean invicible = false;
+	public int invicibleCounter = 0;
+	public int type; // 0 = player, 1 = NPC , 2 = Monstruo
+
+
     String dialogues[] = new String[20];
     int dialogueIndex = 0;
-	public BufferedImage image, image2, image3;
-	public String name;
-	public boolean collision = false;
     
     //estatus del caracter
     public int maxLife;
@@ -69,7 +71,18 @@ public class Entity {
     	collisionOn = false;
     	gp.coCheck.checkTile(this);
     	gp.coCheck.checkObjects(this, false);
-    	gp.coCheck.checkPlayer(this);
+		gp.coCheck.checkEntity(this, gp.npc);
+		gp.coCheck.checkEntity(this, gp.monster);
+    	boolean contactPlayer = gp.coCheck.checkPlayer(this);
+
+		if (this.type == 2 && contactPlayer == true) {
+			if (gp.player.invicible == false) {
+				// WE CAN GIVE DAMAGE
+				gp.player.life -= 1;
+				gp.player.invicible = true;
+			}
+		}
+
     	
         if(collisionOn == false) {
         	
