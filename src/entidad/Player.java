@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.security.Key;
 
 import javax.imageio.ImageIO;
+import javax.xml.namespace.QName;
 
 import main.GamePanel;
 import main.KeyHandler;
@@ -250,12 +251,13 @@ public class Player extends Entity {
         g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.3f));
       }
       g2.drawImage(image, screenX, screenY, null);
+      
+//RESET ALPHA
+      g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1f));
       //DEBUG
 //      g2.setFont(new Font("Arial", Font.PLAIN, 26) );
 //      g2.setColor(Color.white);
 //      g2.drawString("invicible; "+invicibleCounter, 10, 400);
-//RESET ALPHA
-        g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1f));
     }
     
 }
