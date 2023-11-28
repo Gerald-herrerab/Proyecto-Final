@@ -119,6 +119,11 @@ public class Player extends Entity {
             int npcIndex = gp.coCheck.checkEntity(this, gp.npc);
             interactNPC(npcIndex);
             
+            //Check event
+            gp.eHandler.checkEvent();
+            
+        	gp.keyH.enterPressed = false;
+            
             
             //si la colicion es falsa el jugador puede moverse
             
@@ -170,7 +175,6 @@ public class Player extends Entity {
         		gp.npc[i].speak();
     		}
         }
-    	gp.keyH.enterPressed = false;
     }
     	
     	
