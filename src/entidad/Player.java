@@ -1,6 +1,8 @@
 package entidad;
 
+import java.awt.AlphaComposite;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
@@ -8,6 +10,7 @@ import java.io.IOException;
 import java.security.Key;
 
 import javax.imageio.ImageIO;
+import javax.xml.namespace.QName;
 
 import main.GamePanel;
 import main.KeyHandler;
@@ -47,9 +50,13 @@ public class Player extends Entity {
     //posicin del jugadr en el mapa
     public void setDefaultValues () {
 
-        worldX = gp.tileSize * 23;
-        worldY = gp.tileSize * 21;
-        speed = 4;
+       worldX = gp.tileSize * 23;
+       worldY = gp.tileSize * 21;
+
+ //       worldX = gp.tileSize * 10;
+ //       worldY = gp.tileSize * 13;
+
+        speed = 6;
         direccion = "down";
         
         //Player Status
@@ -87,7 +94,7 @@ public class Player extends Entity {
 
     public void update() {
     	
-    	if(KeyH.upPressed == true || KeyH.downPressed == true || KeyH.leftPressed || KeyH.rigthpressed == true) {
+    	if(KeyH.upPressed == true || KeyH.downPressed == true || KeyH.leftPressed || KeyH.rigthpressed == true || KeyH.enterPressed == true) {
     		
             if(KeyH.upPressed == true) {
                 direccion = "up";
@@ -119,15 +126,18 @@ public class Player extends Entity {
             int npcIndex = gp.coCheck.checkEntity(this, gp.npc);
             interactNPC(npcIndex);
             
+             // COMPROBAR COLISION DEL MOSTER
+             int monsterIndex = gp.coCheck.checkEntity(this, gp.monster);
+             contactMonster(monsterIndex);
+        
+
             //Check event
             gp.eHandler.checkEvent();
-            
-        	gp.keyH.enterPressed = false;
-            
+                        
             
             //si la colicion es falsa el jugador puede moverse
             
-            if(collisionOn == false) {
+            if(collisionOn == false && KeyH.enterPressed == false) {
             	
         		switch(direccion) {
         		case "up": worldY -= speed; break;
@@ -136,6 +146,9 @@ public class Player extends Entity {
         		case "rigth": worldX += speed; break;
             }
         }
+
+            gp.keyH.enterPressed = false;
+
         		
             
             spriteCounter++;
@@ -152,15 +165,23 @@ public class Player extends Entity {
             }
 
         }   	
-//		else { 
-//			counter++;
-//				if(counter2 == 20) {
-//  				spriteNum = 1;
-//					couenter2 = 1;
-//				}
-//			}
+		else { 
+			standCounter++;
+				if(standCounter == 20) {
+  				spriteNum = 1;
+					standCounter = 0;
+				}
+
+			}
+            //  ESTO DEBE ESTAR FUERA DE LA DECLARACION IF 
+                if (invicible == true) {
+                    invicibleCounter ++;
+                    if (invicibleCounter > 60) {
+                        invicible = false;
+                        invicibleCounter = 0;
+                    } 
+                }
     } 
-    
     public void pickUpObject(int i) {
     	if (i  != 999) {
             
@@ -177,7 +198,18 @@ public class Player extends Entity {
         }
     }
     	
-    	
+    public void contactMonster(int i){
+        if (i != 999) {
+
+            if (invicible == false) {
+             life -= 1;  
+             invicible = true;
+             
+            }
+            
+        }
+    }
+    
     public void draw (Graphics2D g2) {
 
       BufferedImage image = null;
@@ -216,10 +248,17 @@ public class Player extends Entity {
     	  }
           break;
       }
-
+      if (invicible == true) {
+        g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.3f));
+      }
       g2.drawImage(image, screenX, screenY, null);
-
-
+      
+//RESET ALPHA
+      g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1f));
+      //DEBUG
+//      g2.setFont(new Font("Arial", Font.PLAIN, 26) );
+//      g2.setColor(Color.white);
+//      g2.drawString("invicible; "+invicibleCounter, 10, 400);
     }
     
 }
