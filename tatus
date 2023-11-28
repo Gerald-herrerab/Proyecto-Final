@@ -1,0 +1,753 @@
+[33mcommit 793127b68d6a32264bc0203c79591694e980107f[m[33m ([m[1;36mHEAD -> [m[1;32mGerald-Herrera[m[33m, [m[1;31morigin/Gerald-Herrera[m[33m)[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 18:28:33 2023 -0300
+
+    a
+
+[33mcommit c1e61d47c760f1e7971e70b483e2def7efa53f2d[m
+Merge: 27568a0 811b07f
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 18:05:04 2023 -0300
+
+    Merge branch 'Gerald-Herrera' of https://github.com/Gerald-herrerab/Proyecto-Final into Gerald-Herrera
+
+[33mcommit 27568a0099020f19f0eb495e717f94f0bb04054c[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 18:05:01 2023 -0300
+
+    a
+
+[33mcommit 811b07f8823118077d524d339ad4596736efb695[m
+Merge: cb8c985 16ec896
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 16:53:00 2023 -0300
+
+    Merge branch 'Gerald-Herrera' of https://github.com/Gerald-herrerab/Proyecto-Final into Gerald-Herrera
+
+[33mcommit cb8c985d39766f42abfa996d290f154f26a3af73[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 16:50:15 2023 -0300
+
+    a
+
+[33mcommit 16ec896767d20413c08d89e977e4544f9d045ce8[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 16:47:41 2023 -0300
+
+    a
+
+[33mcommit c8566b0ab4a7a68d649e9f9ebd835f9807adb9a5[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 16:44:17 2023 -0300
+
+    a
+
+[33mcommit 2033fcbcb4acd07618ec66eb33661c98534a9c90[m
+Merge: aea9d30 de3e255
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 16:44:05 2023 -0300
+
+    Merge branch 'Benjamín-Cantero' into Gerald-Herrera
+
+[33mcommit aea9d30a383a0deeee6dd652b112931aa75236e4[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 16:43:09 2023 -0300
+
+    aaa
+    
+    a
+
+[33mcommit 1491a67facf83f4423236c390bf38b571812240e[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:34:50 2023 -0300
+
+    a
+
+[33mcommit c90a8f3f3cb3519c0129bdef4f7fdec0f3078c49[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:33:42 2023 -0300
+
+    a
+
+[33mcommit de3e25510e897cb9da0b99ea0ad84164f3882a95[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:28:40 2023 -0300
+
+    a
+
+[33mcommit 3bc62f363e2e34fa1a648b78252205663bddc1fb[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:22:25 2023 -0300
+
+    a
+
+[33mcommit b8a3c0ba01a0ddb2212935f56f774d8bbefa0446[m
+Merge: 3ac98b0 2db8010
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:22:12 2023 -0300
+
+    Merge branch 'Gerald-Herrera' of https://github.com/Gerald-herrerab/Proyecto-Final into Gerald-Herrera
+
+[33mcommit 3ac98b0709eb8c9f8e82b74b9af2467ce449bc31[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:22:08 2023 -0300
+
+    a
+
+[33mcommit d005e0ad6500a037543eb4237fa322980e90e43b[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 15:20:11 2023 -0300
+
+    acr
+
+[33mcommit 2db80103a9e9760617c183ef9fff135dd0479fd6[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:16:38 2023 -0300
+
+    BIN  monster
+
+[33mcommit 2c062ccea5494545d08a29f46066b09c873a61c7[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:15:40 2023 -0300
+
+    A
+
+[33mcommit 3461c4d949af5de68d378cd98d562f12e9403310[m
+Merge: 11d7c92 1e73cbe
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 15:06:19 2023 -0300
+
+    Merge branch 'Benjamín-Cantero' into Gerald-Herrera
+
+[33mcommit 1e73cbe182aa6bf0d930a70c7abf08ffe061bbf3[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 15:04:44 2023 -0300
+
+    ACT
+    
+    update actualización numero 22
+
+[33mcommit 4b4912f5b92e1df2aa29bb279d34f41ccc5a07dc[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 13:23:29 2023 -0300
+
+    act
+
+[33mcommit f3db96a0f7e40eb17571cab7e3bb152bb1da73e6[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 13:18:09 2023 -0300
+
+    act
+
+[33mcommit d2adc7145e9bc7d2625735092b558c762e26d346[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 13:17:52 2023 -0300
+
+    a
+
+[33mcommit 98ce8f8297477754a7d871e514a500d2b3e3c2aa[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 13:11:34 2023 -0300
+
+    alo
+
+[33mcommit 22859080ab7347769d7dc79de4e70ad31a5e9747[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 13:11:15 2023 -0300
+
+    actualizacion
+
+[33mcommit 11d7c923d8fcae1d1d23decd6aad011ac1387806[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 12:46:16 2023 -0300
+
+    update 21
+
+[33mcommit c1e3f4ba0b294218154823b90b4d0373e02af414[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 28 03:46:54 2023 -0300
+
+    update 16 creo solo cambia las letras
+
+[33mcommit e1e1e9542a631a5216b19e93e0a0de6204203d18[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 03:01:54 2023 -0300
+
+    actualizacion parte 20
+
+[33mcommit ab2a97a810bb01bbd89240ffbd0444d0d1657ecb[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:24:18 2023 -0300
+
+    b
+
+[33mcommit bdbff644677dc6129d3168e04fe01f4eb29f2e8e[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:24:05 2023 -0300
+
+    mejora del simulador
+
+[33mcommit 24755ff6ca921253f2917d4c71d3a9d5fda6a45f[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:17:57 2023 -0300
+
+    a
+
+[33mcommit be7e8c58f75c040da704503bbb8f74056c5128c9[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:16:49 2023 -0300
+
+    ACT
+
+[33mcommit e8be3a477e456025dc808b821b6333203b42fe1d[m
+Merge: 186e3b7 da5facd
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:16:26 2023 -0300
+
+    Merge branch 'Gerald-Herrera' into Benjamín-Cantero
+
+[33mcommit 186e3b78a2f4a4b9d5fb7cb17949f36f213832ea[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:15:37 2023 -0300
+
+    act
+
+[33mcommit e0e99e0c318ce9aecc61e582b5d28e16a94af67a[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:14:42 2023 -0300
+
+    a
+    
+    a
+
+[33mcommit da5facd1ce2beca465656264ff695f0dfe44a563[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:14:23 2023 -0300
+
+    a
+    
+    a
+
+[33mcommit 9ae60008cb5d55af59ca5ac98891ecbd778de25f[m
+Merge: aa19c6a e2ae0c9
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 28 01:12:08 2023 -0300
+
+    Merge branch 'Gerald-Herrera' into Benjamín-Cantero
+
+[33mcommit 2320c58ae3b50ea15f9f802b7c7ba0088f11f766[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 27 23:06:12 2023 -0300
+
+    update 19
+
+[33mcommit c328cd8978c11840436fa23375ed1f1a523db716[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 27 21:55:11 2023 -0300
+
+    update 18
+
+[33mcommit e2ae0c9c9fd3a2a1d548b93242fc9f424c88feb8[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 27 21:02:03 2023 -0300
+
+    update 17
+
+[33mcommit aa19c6a5811ebfaaa248ef557e8d787e536faa71[m
+Merge: 34b9294 c6165b7
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Mon Nov 27 03:03:12 2023 -0300
+
+    Merge branch 'Gerald-Herrera' into Benjamín-Cantero
+
+[33mcommit 34b92946eeeff260616e598637a3dd02d3a286ce[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Mon Nov 27 02:33:26 2023 -0300
+
+    act
+
+[33mcommit a79ffe09d24179bd3dd9f8d46dda6420bb616af7[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Mon Nov 27 02:30:27 2023 -0300
+
+    axt
+
+[33mcommit c6165b720a971b8f533efad965de9fd47614ae1e[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 27 02:23:03 2023 -0300
+
+    limpieza15
+
+[33mcommit 7cde0d61771ab1702ecfe1d6779ecdcabc9ecfcf[m
+Merge: 0cfd8ac 0b0c03b
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 27 02:19:00 2023 -0300
+
+    update15
+
+[33mcommit 0cfd8acf8f609cfc4c580619765fb361a4af1c76[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 27 02:15:23 2023 -0300
+
+    update 15
+
+[33mcommit 0b0c03bd91745ad90429a2daa19e87428cf6b8cc[m
+Merge: 9fca710 7860fbf
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 27 01:20:04 2023 -0300
+
+    Merge branch 'Gerald-Herrera' of https://github.com/Gerald-herrerab/Proyecto-Final into Gerald-Herrera
+
+[33mcommit 9fca710c226bcfd25b17ee07e1a2a163ca787c8b[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 27 01:13:40 2023 -0300
+
+    update 15
+
+[33mcommit 7860fbff68fb8762cb0afeca7c8ab48e452f67c5[m
+Merge: 77d130f 39cd3eb
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 22:55:48 2023 -0300
+
+    Merge branch 'Gerald-Herrera' of https://github.com/Gerald-herrerab/Proyecto-Final into Gerald-Herrera
+
+[33mcommit 77d130fb4cc359a0699e43ce7dc403981444ca05[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 22:55:29 2023 -0300
+
+    a
+
+[33mcommit 39cd3eb93a7afb6effa60edbc98f89dbad8f8852[m
+Merge: a924425 5a72958
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 22:50:54 2023 -0300
+
+    Merge branch 'Gerald-Herrera' of https://github.com/Gerald-herrerab/Proyecto-Final into Gerald-Herrera
+
+[33mcommit a9244253c9d988e1b7922b4a037b9a1c75668528[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 22:50:20 2023 -0300
+
+    algo
+
+[33mcommit 5a72958a044080ba71e38ca9bbe4bbb647f8b509[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 22:46:58 2023 -0300
+
+    a
+
+[33mcommit 4e2ba2b83d37d235e3d2e752fd56e4b34e43e023[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 22:45:52 2023 -0300
+
+    a
+
+[33mcommit cbbb3a3f55f5852397fef14ea28e68f8d2382584[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 20:57:33 2023 -0300
+
+    img
+    
+    img
+
+[33mcommit e88e314c17b097c8bc289727a03fb12907bbda35[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 20:54:08 2023 -0300
+
+    update 14
+
+[33mcommit 2076e905c2d476bec184574685388e904d09c01f[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 19:20:22 2023 -0300
+
+    aa
+
+[33mcommit 4dc0d4773c499f30a43a84315589c07e0985f33d[m
+Merge: f055835 edd209c
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 19:20:13 2023 -0300
+
+    Merge branch 'Benjamín-Cantero' into Gerald-Herrera
+
+[33mcommit edd209cd23bfd1eadb325c670086d4b193e7d6bb[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 19:07:20 2023 -0300
+
+    actualizacion
+
+[33mcommit f0558351e8bc9477556839a9aeb79b37577979c4[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 18:58:26 2023 -0300
+
+    commint
+
+[33mcommit 3b291213d10dae1ae9b3429d0091102eaea7709a[m
+Merge: df1d56d 8edc081
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 18:58:10 2023 -0300
+
+    Merge branch 'Benjamín-Cantero' into Gerald-Herrera
+
+[33mcommit df1d56d4817c73bfca014af079799bfe4b6b3f0e[m
+Merge: cd51553 eac403c
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 18:52:49 2023 -0300
+
+    Merge branch 'Benjamín-Cantero' into Gerald-Herrera
+
+[33mcommit 8edc0810b8b5a836cdef42e959718f5be25686b6[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 18:51:16 2023 -0300
+
+    a
+
+[33mcommit cd51553745a4501fd09fc7a65f651a5904e28011[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 18:50:18 2023 -0300
+
+    image
+
+[33mcommit f01a5b129dcd588c40320ff1890701674e1ec0b9[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 18:49:35 2023 -0300
+
+    actualiazcion parte 12
+
+[33mcommit eac403c9eb1a0a90424a4de11656215056333c54[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 17:50:08 2023 -0300
+
+    merge into gerald
+
+[33mcommit 5a0f0d7f8da6ddfdb6f4ed5d2f81f1bc4de90f53[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 17:40:54 2023 -0300
+
+    update tile y mapa  12
+
+[33mcommit c3206b8b64f3bd892c8a03670484bf130a91a4d4[m
+Merge: f4caeb3 5907b9c
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 17:15:25 2023 -0300
+
+    Merge branch 'Benjamín-Cantero' into Gerald-Herrera
+
+[33mcommit f4caeb3fe0a595b40aa92ce8b631e94db22646e3[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 17:09:10 2023 -0300
+
+    a
+
+[33mcommit dbee374fff6abde63f954c5282a3f1fdad06f693[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 17:04:39 2023 -0300
+
+    chupaya
+
+[33mcommit 2cacd049fc81463e64111c0a38bbc2aefa496a5e[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 16:56:48 2023 -0300
+
+    imagenes
+
+[33mcommit 5907b9c4ac2487c9cc6d496840cf9a83d137364d[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 16:53:48 2023 -0300
+
+    actualizacion
+    
+    se realiza una renderizacion de texturas para que el juego no consuma mas ram de lo debido ya para ampliaar el mapa futuras ampliaciones
+
+[33mcommit 5eebfd644277d27be677e8f267eb94ad2788ede5[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 15:24:12 2023 -0300
+
+    a
+
+[33mcommit d0c6cbf856358f076bcc7b50855eed6f123e33a5[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 14:51:12 2023 -0300
+
+    p
+
+[33mcommit 77480ac9eec24766fd4d6cdf6abe4f5bca05a9ad[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 14:47:58 2023 -0300
+
+    p
+
+[33mcommit 8af123a11557d137a78280ba13dce9753fc7eaf0[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 14:39:39 2023 -0300
+
+    a
+
+[33mcommit 0f056b14389f8477704f5ae7b5cc6f9d09c66103[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 14:39:23 2023 -0300
+
+    actualizacion
+
+[33mcommit dfdfcc54affc334430611c476d00a71fa7f2e3e0[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sun Nov 26 14:33:48 2023 -0300
+
+    update
+
+[33mcommit f5965714e3f0d435f2bbc7aa2ef48411ec52b5eb[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 01:40:16 2023 -0300
+
+    a
+
+[33mcommit 19b66d63b629c5475f14eb6e6ce372c4979b8c29[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 01:27:42 2023 -0300
+
+    act
+
+[33mcommit e4c50883a880be27e15f323eddc1da5479fb3d24[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sun Nov 26 01:25:22 2023 -0300
+
+    actualizacion
+
+[33mcommit 0dad72df41067cfa6d3e85990d8592ed78580fc0[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sat Nov 25 23:56:32 2023 -0300
+
+    update
+
+[33mcommit 9f0fdc3c02cc48a4c1ad1fa9ae69be825b41415c[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 23:33:18 2023 -0300
+
+    act
+    
+    cllas
+
+[33mcommit e79cd3380eebe39ee95ebf5971c1ca7256cda2aa[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 23:27:38 2023 -0300
+
+    a
+
+[33mcommit c788bdf40f4186555b91398cc4ff3b17c3599d96[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 23:27:23 2023 -0300
+
+    act
+
+[33mcommit cff8ce55b4201848c3aa6e77feba3046d03bc760[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 21:23:50 2023 -0300
+
+    act
+
+[33mcommit 5cec099e6092a7b8a13007ebfb74fa40f7d7211f[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 21:11:08 2023 -0300
+
+    o
+
+[33mcommit b1c12236e224c3eef288e4a444fc2034c1425a70[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 21:10:03 2023 -0300
+
+    e
+
+[33mcommit cf838fa1d8f10f8325acaf24d04c61a265e6a4c4[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 21:05:54 2023 -0300
+
+    i
+
+[33mcommit 3f11ef0ba5c2bcdb2dc8b7e08e8a4624b3f621f9[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 21:05:21 2023 -0300
+
+    e
+
+[33mcommit 8204bca2741d3c65fc66f0251c88a704858b835b[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 21:03:57 2023 -0300
+
+    a
+
+[33mcommit 862e69b14704478dc6f123e342400ac1ae75c206[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 21:02:46 2023 -0300
+
+    act
+    
+    act
+
+[33mcommit 83bc6b262eed626fea74665b5a95e8f7848fd8e5[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 20:50:55 2023 -0300
+
+    lipieza
+    
+    limpio mi rama para trabajar con el mismo material
+
+[33mcommit 6ac9d1688fbb6970b3868a15ee475e797c7f093d[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 20:48:48 2023 -0300
+
+    a
+
+[33mcommit 92d2c0b1aede234ba50e176eec81c998f871353b[m
+Merge: 7fa05bb 21049c7
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 20:48:41 2023 -0300
+
+    Merge branch 'Gerald-Herrera' into Benjamín-Cantero
+
+[33mcommit 7fa05bb511271ec872eb0e2c82866879a9a8c4d4[m
+Merge: aad2877 6035934
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sat Nov 25 20:36:47 2023 -0300
+
+    Merge pull request #1 from BenjaminCantero/Benjamín-Cantero
+    
+    Benjamín cantero
+
+[33mcommit 21049c7c940b8b98a382969e4ab44adcf150e46b[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sat Nov 25 19:36:46 2023 -0300
+
+    solo movi lo demas a una carpeta "a"
+
+[33mcommit 0d70a153746b7fb5a3c08b0285113b9c8b169678[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sat Nov 25 19:34:10 2023 -0300
+
+    nose que es esto xd
+
+[33mcommit bf91404595570d8c2a149e5449c94c9d1ded78b6[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Sat Nov 25 19:31:46 2023 -0300
+
+    actualizacion y conexion a eclipse
+
+[33mcommit 6035934b1cfff5727f35962bb3db43401bb90896[m[33m ([m[1;31mupstream/Benjamín-Cantero[m[33m)[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Sat Nov 25 19:31:40 2023 -0300
+
+    act
+
+[33mcommit f6fdca960711057a6bc5f3155a958ca40e80e50a[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Fri Nov 24 18:01:49 2023 -0300
+
+    act
+
+[33mcommit ea9158076572ce6912a63346f7044261a1e0a27c[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Fri Nov 24 17:43:19 2023 -0300
+
+    holi
+
+[33mcommit f07a1c41feaebf99d9d891919ab89ba50c6f8d8c[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Fri Nov 24 17:35:55 2023 -0300
+
+    actualizacion
+    
+    se añaden mejorar se incorporan funciones y clases
+
+[33mcommit e244b6de0dc9adedb893da62cebb2e10d73bb4c6[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 21 22:39:18 2023 -0300
+
+    codigo a trabajar
+
+[33mcommit 66408d9d7abcfd1417683374bffeae89584eb69c[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Tue Nov 21 22:08:54 2023 -0300
+
+    update
+
+[33mcommit 5f6938242accba114c36d296b5ad2af4b969a917[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Thu Nov 16 16:57:15 2023 -0300
+
+    actualizacion, creacion de valdosas mediante archivo txt
+
+[33mcommit 22dd77e33b3c8f4ee74d4329af9ad5b5af0b9357[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Thu Nov 16 01:27:27 2023 -0300
+
+    actualizacion
+
+[33mcommit 0e5d6ccf3db17dfc62a4b4d6cdaef2be4aa1a3ea[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Wed Nov 15 22:49:57 2023 -0300
+
+    verificar el readme
+
+[33mcommit 364b69907d7415483740b54fd6b87868bb4ada20[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Wed Nov 15 20:13:31 2023 -0300
+
+    actualizacion
+
+[33mcommit f7a3863745f1ab96ef1246928fcc6348682e3ea0[m
+Merge: a739aae d563884
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Wed Nov 15 02:51:35 2023 -0300
+
+    Merge branch 'Gerald-Herrera' of https://github.com/Gerald-herrerab/Proyecto-Final into Gerald-Herrera
+
+[33mcommit a739aae29802f8f95a7b93af4eb76061c0d9aebe[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Wed Nov 15 01:22:11 2023 -0300
+
+    creacion del main y el panek, background
+
+[33mcommit d5638840c9a913d3ee1c3eb1122086e5378f0e73[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Wed Nov 15 01:22:11 2023 -0300
+
+    creacion del main y el panek, background
+
+[33mcommit a3b29b2deea5681b91861cd6dc8d3848da835eff[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 14 23:55:28 2023 -0300
+
+    act
+    
+    act
+
+[33mcommit 18a1f0fe6bb1e5ce072c65c8b656f2415e733cc0[m
+Author: BenjaminCantero <bcantero2023@alu.uct.cl>
+Date:   Tue Nov 14 23:28:18 2023 -0300
+
+    act
+    
+    creación de la display main junto a los hilos de la ventana
+
+[33mcommit ead680da86b78c3360e04b8dc5d3ef01d14464f4[m
+Merge: e8796ff ca7d38b
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 13 21:54:15 2023 -0300
+
+    Merge branch 'Gerald-Herrera' of https://github.com/Gerald-herrerab/Proyecto-Final into Gerald-Herrera
+
+[33mcommit e8796ff77c020088c279954b6e6fe87434ea22e5[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 13 21:53:48 2023 -0300
+
+    prueba
+
+[33mcommit ca7d38b486a5fa67e616b25a1d31e6ca4752c7f1[m
+Author: Gerald-herrerab <134649587+Gerald-herrerab@users.noreply.github.com>
+Date:   Mon Nov 13 21:52:08 2023 -0300
+
+    prueba
+
+[33mcommit aad28773c79cf835c93901f80e0a8c09302dc8dc[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m, [m[1;31mupstream/Gerald-Herrera[m[33m, [m[1;31mupstream/Dev-1[m[33m, [m[1;32mmain[m[33m)[m
+Author: BenjaminCantero <134803617+BenjaminCantero@users.noreply.github.com>
+Date:   Sun Nov 12 14:19:52 2023 -0300
+
+    Initial commit
