@@ -1,5 +1,6 @@
 package object;
 
+<<<<<<< HEAD
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -20,6 +21,22 @@ public class OBJ_Key extends SuperObject{
 			
 		}
 		
+=======
+import entidad.Entity;
+import main.GamePanel;
+
+public class OBJ_Key extends Entity{
+
+		
+	public OBJ_Key (GamePanel gp) {
+			
+		super(gp);
+		
+		name = "Key";
+		down1 = setup("/objects/key ");
+		
+	
+>>>>>>> Benjamín-Cantero
 	}
 
 }

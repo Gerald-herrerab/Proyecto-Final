@@ -1,6 +1,12 @@
 package entidad;
 
+<<<<<<< HEAD
 import java.awt.Color;
+=======
+import java.awt.AlphaComposite;
+import java.awt.Color;
+import java.awt.Font;
+>>>>>>> Benjamín-Cantero
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
@@ -8,6 +14,10 @@ import java.io.IOException;
 import java.security.Key;
 
 import javax.imageio.ImageIO;
+<<<<<<< HEAD
+=======
+import javax.xml.namespace.QName;
+>>>>>>> Benjamín-Cantero
 
 import main.GamePanel;
 import main.KeyHandler;
@@ -47,10 +57,25 @@ public class Player extends Entity {
     //posicin del jugadr en el mapa
     public void setDefaultValues () {
 
+<<<<<<< HEAD
         worldX = gp.tileSize * 23;
         worldY = gp.tileSize * 21;
         speed = 4;
         direccion = "down";
+=======
+       worldX = gp.tileSize * 23;
+       worldY = gp.tileSize * 21;
+
+ //       worldX = gp.tileSize * 10;
+ //       worldY = gp.tileSize * 13;
+
+        speed = 6;
+        direccion = "down";
+        
+        //Player Status
+        maxLife = 6;
+        life = maxLife;
+>>>>>>> Benjamín-Cantero
 
 
     }
@@ -115,6 +140,19 @@ public class Player extends Entity {
             int npcIndex = gp.coCheck.checkEntity(this, gp.npc);
             interactNPC(npcIndex);
             
+<<<<<<< HEAD
+=======
+             // COMPROBAR COLISION DEL MOSTER
+             int monsterIndex = gp.coCheck.checkEntity(this, gp.monster);
+             contactMonster(monsterIndex);
+        
+
+            //Check event
+            gp.eHandler.checkEvent();
+            
+        	gp.keyH.enterPressed = false;
+            
+>>>>>>> Benjamín-Cantero
             
             //si la colicion es falsa el jugador puede moverse
             
@@ -143,6 +181,7 @@ public class Player extends Entity {
             }
 
         }   	
+<<<<<<< HEAD
 //		else { 
 //			counter++;
 //				if(counter2 == 20) {
@@ -152,6 +191,25 @@ public class Player extends Entity {
 //			}
     } 
     
+=======
+		else { 
+			standCounter++;
+				if(standCounter == 20) {
+  				spriteNum = 1;
+					standCounter = 0;
+				}
+
+			}
+            //  ESTO DEBE ESTAR FUERA DE LA DECLARACION IF 
+                if (invicible == true) {
+                    invicibleCounter ++;
+                    if (invicibleCounter > 60) {
+                        invicible = false;
+                        invicibleCounter = 0;
+                    } 
+                }
+    } 
+>>>>>>> Benjamín-Cantero
     public void pickUpObject(int i) {
     	if (i  != 999) {
             
@@ -166,10 +224,27 @@ public class Player extends Entity {
         		gp.npc[i].speak();
     		}
         }
+<<<<<<< HEAD
     	gp.keyH.enterPressed = false;
     }
     	
     	
+=======
+    }
+    	
+    public void contactMonster(int i){
+        if (i != 999) {
+
+            if (invicible == false) {
+             life -= 1;  
+             invicible = true;
+             
+            }
+            
+        }
+    }
+    
+>>>>>>> Benjamín-Cantero
     public void draw (Graphics2D g2) {
 
       BufferedImage image = null;
@@ -208,10 +283,24 @@ public class Player extends Entity {
     	  }
           break;
       }
+<<<<<<< HEAD
 
       g2.drawImage(image, screenX, screenY, null);
 
 
+=======
+      if (invicible == true) {
+        g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.3f));
+      }
+      g2.drawImage(image, screenX, screenY, null);
+      
+//RESET ALPHA
+      g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1f));
+      //DEBUG
+//      g2.setFont(new Font("Arial", Font.PLAIN, 26) );
+//      g2.setColor(Color.white);
+//      g2.drawString("invicible; "+invicibleCounter, 10, 400);
+>>>>>>> Benjamín-Cantero
     }
     
 }

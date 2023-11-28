@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+<<<<<<< HEAD
 import main.GamePanel;
 
 public class OBJ_Chest extends SuperObject{
@@ -25,6 +26,20 @@ public class OBJ_Chest extends SuperObject{
 			e.printStackTrace();
 			
 		}
+=======
+import entidad.Entity;
+import main.GamePanel;
+
+public class OBJ_Chest extends Entity{
+
+	public OBJ_Chest (GamePanel gp) {
+		
+		super(gp);
+
+
+		name = "Chest";
+		down1 = setup("/objects/chest");
+>>>>>>> Benjamín-Cantero
 		
 	}
 
