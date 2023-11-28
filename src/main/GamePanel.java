@@ -49,6 +49,7 @@ public class GamePanel extends JPanel implements Runnable{
     public SuperObject obj[] = new SuperObject[10];
     public Entity npc[] = new Entity[10];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     public Entity monster[] = new Entity[20];
 
@@ -56,6 +57,8 @@ public class GamePanel extends JPanel implements Runnable{
     ArrayList<Entity> entityList = new ArrayList<>();
     
 >>>>>>> 0813235112290c37b567c6e989af2bf89029e20a
+=======
+>>>>>>> parent of 11d7c92 (update 21)
     
     
     //GAME STATE
@@ -178,6 +181,7 @@ public class GamePanel extends JPanel implements Runnable{
         //OTROS
         else {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         	//Tile
         	tileM.draw(g2);
@@ -224,6 +228,8 @@ public class GamePanel extends JPanel implements Runnable{
         		entityList.remove(i);
         	}
 >>>>>>> 0813235112290c37b567c6e989af2bf89029e20a
+=======
+>>>>>>> parent of 11d7c92 (update 21)
         	
             //TILE
             tileM.draw(g2);
