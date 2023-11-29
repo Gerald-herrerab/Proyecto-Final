@@ -209,7 +209,7 @@ public class UI {
 
             // TITLE NAME
             g2.setFont(g2.getFont().deriveFont(Font.BOLD, 96F));
-            String text = "Las aventuras de Juan";
+            String text = "Blue Boy Adventure";
             int x = getXforCenteredText(text);
             int y = gp.tileSize * 3;
 
@@ -229,7 +229,7 @@ public class UI {
             // MAIN MENU
             g2.setFont(g2.getFont().deriveFont(Font.BOLD, 48F));
 
-            text = "NUEVA JUEGO";
+            text = "NEW GAME";
             x = getXforCenteredText(text);
             y += gp.tileSize * 3.5;
             g2.drawString(text, x, y);
@@ -237,7 +237,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "CARGAR";
+            text = "LOAD GAME";
             x = getXforCenteredText(text);
             y += gp.tileSize;
             g2.drawString(text, x, y);
@@ -245,7 +245,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "SALIR";
+            text = "QUIT";
             x = getXforCenteredText(text);
             y += gp.tileSize;
             g2.drawString(text, x, y);
@@ -259,12 +259,12 @@ public class UI {
             g2.setColor(Color.white);
             g2.setFont(g2.getFont().deriveFont(42F));
 
-            String text = "Selecciona tu personaje!";
+            String text = "Select your class!";
             int x = getXforCenteredText(text);
             int y = gp.tileSize * 3;
             g2.drawString(text, x, y);
 
-            text = "luchador";
+            text = "Fighter";
             x = getXforCenteredText(text);
             y += gp.tileSize * 3;
             g2.drawString(text, x, y);
@@ -272,7 +272,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "Ladron";
+            text = "Thief";
             x = getXforCenteredText(text);
             y += gp.tileSize;
             g2.drawString(text, x, y);
@@ -280,7 +280,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "Hechizero";
+            text = "Sorcerer";
             x = getXforCenteredText(text);
             y += gp.tileSize;
             g2.drawString(text, x, y);
@@ -288,7 +288,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "ATRAS";
+            text = "Back";
             x = getXforCenteredText(text);
             y += gp.tileSize * 2;
             g2.drawString(text, x, y);
@@ -300,7 +300,7 @@ public class UI {
 
     public void drawPauseScreen() {
         g2.setFont(g2.getFont().deriveFont(Font.PLAIN, 80F));
-        String text = "PAUSA";
+        String text = "PAUSED";
 
         int x = getXforCenteredText(text);
 
@@ -352,21 +352,21 @@ public class UI {
         textY += lineHeight;
         g2.drawString("Mana", textX, textY);
         textY += lineHeight;
-        g2.drawString("Fuerza", textX, textY);
+        g2.drawString("durabilidad", textX, textY);
         textY += lineHeight;
         g2.drawString("Destresa", textX, textY);
         textY += lineHeight;
-        g2.drawString("Ataque", textX, textY);
+        g2.drawString("Atake", textX, textY);
         textY += lineHeight;
         g2.drawString("Defensa", textX, textY);
         textY += lineHeight;
-        g2.drawString("Experiencia", textX, textY);
+        g2.drawString("Exp", textX, textY);
         textY += lineHeight;
-        g2.drawString("Nuevo nivel", textX, textY);
+        g2.drawString("Next Level", textX, textY);
         textY += lineHeight;
-        g2.drawString("Monedas", textX, textY);
+        g2.drawString("Moneda", textX, textY);
         textY += lineHeight + 10;
-        g2.drawString("arma", textX, textY);
+        g2.drawString("Armas", textX, textY);
         textY += lineHeight + 15;
         g2.drawString("Escudo", textX, textY);
         textY += lineHeight;
@@ -530,7 +530,7 @@ public class UI {
         String text;
         g2.setFont(g2.getFont().deriveFont(Font.BOLD, 110f));
 
-        text = "Has muerto :( ";
+        text = "Game Over";
 
         // SHADOW
         g2.setColor(Color.black);
@@ -554,7 +554,7 @@ public class UI {
         }
 
         // QUIT
-        text = "Salir";
+        text = "Quit";
         x = getXforCenteredText(text);
         y += 55;
         g2.drawString(text, x, y);
@@ -598,7 +598,7 @@ public class UI {
         int textY;
 
         // TITLE
-        String text = "Opciones";
+        String text = "Options";
         textX = getXforCenteredText(text);
         textY = frameY + gp.tileSize;
         g2.drawString(text, textX, textY);
@@ -606,7 +606,7 @@ public class UI {
         // FULL SCREEN ON/OFF
         textX = frameX + gp.tileSize;
         textY += gp.tileSize * 2;
-        g2.drawString("Pantalla Completa", textX, textY);
+        g2.drawString("Full Screen", textX, textY);
         if (commandNum == 0) {
             g2.drawString(">", textX - 25, textY);
 
@@ -620,23 +620,23 @@ public class UI {
             }
         }
 
-        // MUSICA
+        // MUSIC
         textY += gp.tileSize;
-        g2.drawString("Musica", textX, textY);
+        g2.drawString("Music", textX, textY);
         if (commandNum == 1) {
             g2.drawString(">", textX - 25, textY);
         }
 
-        // EFECTOS DE SONIDO
+        // SOUND EFFECT
         textY += gp.tileSize;
-        g2.drawString("Efec sonidos", textX, textY);
+        g2.drawString("SE", textX, textY);
         if (commandNum == 2) {
             g2.drawString(">", textX - 25, textY);
         }
 
-        // CONTROLES
+        // CONTROL
         textY += gp.tileSize;
-        g2.drawString("Controles", textX, textY);
+        g2.drawString("Control", textX, textY);
         if (commandNum == 3) {
             g2.drawString(">", textX - 25, textY);
 
@@ -646,9 +646,9 @@ public class UI {
             }
         }
 
-        // FIN DEL JUEGO
+        // END GAME
         textY += gp.tileSize;
-        g2.drawString("Fin del juego :C ", textX, textY);
+        g2.drawString("End Game", textX, textY);
         if (commandNum == 4) {
             g2.drawString(">", textX - 25, textY);
 
@@ -658,9 +658,9 @@ public class UI {
             }
         }
 
-        // ATRAS
+        // BACK
         textY += gp.tileSize * 2;
-        g2.drawString("Atras", textX, textY);
+        g2.drawString("Back", textX, textY);
         if (commandNum == 5) {
             g2.drawString(">", textX - 25, textY);
 
@@ -670,7 +670,7 @@ public class UI {
             }
         }
 
-        // PANTALLA COMPLETA
+        // FULL SCREEN CHECK BOX
         textX = frameX + (int) (gp.tileSize * 4.5);
         textY = frameY + gp.tileSize * 2 + 24;
         g2.setStroke(new BasicStroke(3));
@@ -680,13 +680,13 @@ public class UI {
             g2.fillRect(textX, textY, 24, 24);
         }
 
-        // VOLUMEN DE LA MUSICA
+        // MUSIC VOLUME BOX
         textY += gp.tileSize;
         g2.drawRect(textX, textY, 120, 24);
         int volumeWidth = 24 * gp.music.volumeScale;
         g2.fillRect(textX, textY, volumeWidth, 24);
 
-        // VOLUMEN DE EFECTOS DE SONIDO 
+        // SOUND EFFECT VOLUME BOX
         textY += gp.tileSize;
         g2.drawRect(textX, textY, 120, 24);
         volumeWidth = 24 * gp.se.volumeScale;
@@ -699,16 +699,16 @@ public class UI {
         int textX = frameX + gp.tileSize;
         int textY = frameY + gp.tileSize * 3;
 
-        currentDialogue = "El cambio surtirá \n efecto después de \n reiniciar el juego";
+        currentDialogue = "\"El cambio tendrá efecto\n después de reiniciar \n el juego.\"";
 
         for (String line : currentDialogue.split("\n")) {
             g2.drawString(line, textX, textY);
             textY += 40;
         }
 
-        // VOLVER ATRAS
+        // BACK OPTION
         textY = frameY + gp.tileSize * 9;
-        g2.drawString("Atras", textX, textY);
+        g2.drawString("Back", textX, textY);
 
         if (commandNum == 0) {
             g2.drawString(">", textX - 25, textY);
@@ -723,8 +723,8 @@ public class UI {
         int textX;
         int textY;
 
-        // TITULO
-        String text = "Controles";
+        // TITLE
+        String text = "Control";
         textX = getXforCenteredText(text);
         textY = frameY + gp.tileSize;
         g2.drawString(text, textX, textY);
@@ -761,10 +761,10 @@ public class UI {
         g2.drawString("ESC", textX, textY);
         textY += gp.tileSize;
 
-        // ATRAS
+        // BACK
         textX = frameX + gp.tileSize;
         textY = frameY + gp.tileSize * 9;
-        g2.drawString("Atras", textX, textY);
+        g2.drawString("Back", textX, textY);
 
         if (commandNum == 0) {
             g2.drawString(">", textX - 25, textY);
@@ -780,15 +780,15 @@ public class UI {
         int textX = frameX + gp.tileSize;
         int textY = frameY + gp.tileSize * 3;
 
-        currentDialogue = "Quieres salir dle simulador \ny retornar a la pantalla de inicio?";
+        currentDialogue = "¿Salir del juego y volver \n a la pantalla principal?";
 
         for (String line : currentDialogue.split("\n")) {
             g2.drawString(line, textX, textY);
             textY += 40;
         }
 
-        // SI
-        String text = "SI";
+        // YES
+        String text = "Yes";
         textX = getXforCenteredText(text);
         textY += gp.tileSize * 3;
         g2.drawString(text, textX, textY);
@@ -856,7 +856,7 @@ public class UI {
     public void trade_select() {
         drawDialogueScreen();
 
-        // DIBUJAR VENTANA
+        // DRAW WINDOW
         int x = gp.tileSize * 15;
         int y = gp.tileSize * 4;
         int width = gp.tileSize * 3;
@@ -864,10 +864,10 @@ public class UI {
 
         drawSubWindow(x, y, width, height);
 
-        // DUBUJAR TEXTOS
+        // DRAW TEXTS
         x += gp.tileSize;
         y += gp.tileSize;
-        g2.drawString("Comprar", x, y);
+        g2.drawString("Buy", x, y);
 
         if (commandNum == 0) {
             g2.drawString(">", x - 24, y);
@@ -879,7 +879,7 @@ public class UI {
 
         y += gp.tileSize;
 
-        g2.drawString("Vender", x, y);
+        g2.drawString("Sell", x, y);
 
         if (commandNum == 1) {
             g2.drawString(">", x - 24, y);
@@ -891,7 +891,7 @@ public class UI {
 
         y += gp.tileSize;
 
-        g2.drawString("Dejar", x, y);
+        g2.drawString("Leave", x, y);
 
         if (commandNum == 2) {
             g2.drawString(">", x - 24, y);
@@ -899,19 +899,19 @@ public class UI {
             if (gp.keyH.enterPressed == true) {
                 commandNum = 0;
                 gp.gameState = gp.dialogueState;
-                currentDialogue = "Vuelve pronto wuajaja!";
+                currentDialogue = "Come again, hehe!";
             }
         }
     }
 
     public void trade_buy() {
-        // INVETARIO DIBUJADO
+        // DRAW PLAYER INVENTORY
         drawInventory(gp.player, false);
 
-        // INVETARIO
+        // DRAW NPC INVENTORY
         drawInventory(npc, true);
 
-        // VENTANA DE MONEDAS JUGADOR 
+        // DRAW HINT WINDOW
         int x = gp.tileSize * 2;
         int y = gp.tileSize * 9;
         int width = gp.tileSize * 6;
@@ -927,9 +927,9 @@ public class UI {
         height = gp.tileSize * 2;
 
         drawSubWindow(x, y, width, height);
-        g2.drawString("Tus monedas: " + gp.player.coin, x + 24, y + 60);
+        g2.drawString("Your Coin: " + gp.player.coin, x + 24, y + 60);
 
-        // VENTANA DE PRECIOS
+        // DRAW PRICE WINDOW
         int itemIndex = getItemIndexOnSlot(npcSlotCol, npcSlotRow);
         if (itemIndex < npc.inventory.size()) {
             x = (int) (gp.tileSize * 5.5);
@@ -945,17 +945,17 @@ public class UI {
             x = getXforAlignToRightText(text, gp.tileSize * 8 - 20);
             g2.drawString(text, x, y + 34);
 
-            // COMPRA UN ARTICULO
+            // BUY AN ITEM
             if (gp.keyH.enterPressed == true) {
                 if (npc.inventory.get(itemIndex).price > gp.player.coin) {
                     subState = 0;
                     gp.gameState = gp.dialogueState;
-                    currentDialogue = "Necesitas mas monedas para comprar esto!";
+                    currentDialogue = "You need more coin to buy that!";
                     drawDialogueScreen();
                 } else if (gp.player.inventory.size() == gp.player.maxInventorySize) {
                     subState = 0;
                     gp.gameState = gp.dialogueState;
-                    currentDialogue = "Tu inventario esta lleno!";
+                    currentDialogue = "Your inventory is full!";
                 } else {
                     gp.player.coin -= npc.inventory.get(itemIndex).price;
                     gp.player.inventory.add(npc.inventory.get(itemIndex));
@@ -965,7 +965,7 @@ public class UI {
     }
 
     public void trade_sell() {
-        // MOSTRAR INVENTARIO DE JUGADORES
+        // DRAW PLAYER INVENTORY
         drawInventory(gp.player, true);
 
         int x;
@@ -973,7 +973,7 @@ public class UI {
         int width;
         int height;
 
-        // VENTANA PARA DIBUJAR
+        // DRAW HINT WINDOW
         x = gp.tileSize * 2;
         y = gp.tileSize * 9;
         width = gp.tileSize * 6;
@@ -982,16 +982,16 @@ public class UI {
         drawSubWindow(x, y, width, height);
         g2.drawString("[ESC] Back", x + 24, y + 60);
 
-        // MONEDAS DEL JUGADOR EN VENTANA
+        // DRAW PLAYER COIN WINDOW
         x = gp.tileSize * 12;
         y = gp.tileSize * 9;
         width = gp.tileSize * 6;
         height = gp.tileSize * 2;
 
         drawSubWindow(x, y, width, height);
-        g2.drawString("Tus monedas: " + gp.player.coin, x + 24, y + 60);
+        g2.drawString("Your Coin: " + gp.player.coin, x + 24, y + 60);
 
-        // VENTANA DE PRECIO 
+        // DRAW PRICE WINDOW
         int itemIndex = getItemIndexOnSlot(playerSlotCol, playerSlotRow);
         if (itemIndex < gp.player.inventory.size()) {
             x = (int) (gp.tileSize * 15.5);
@@ -1007,14 +1007,14 @@ public class UI {
             x = getXforAlignToRightText(text, gp.tileSize * 18 - 20);
             g2.drawString(text, x, y + 34);
 
-            // VENDER ARTICULO
+            // SELL AN ITEM
             if (gp.keyH.enterPressed == true) {
                 if (gp.player.inventory.get(itemIndex) == gp.player.currentWeapon
                         || gp.player.inventory.get(itemIndex) == gp.player.currentShield) {
                     commandNum = 0;
                     subState = 0;
                     gp.gameState = gp.dialogueState;
-                    currentDialogue = "No puedes vender un articulo equipado!";
+                    currentDialogue = "You cannot sell an equipped item!";
                 } else {
                     gp.player.inventory.remove(itemIndex);
                     gp.player.coin += price;
@@ -1051,6 +1051,6 @@ public class UI {
         int length = (int) g2.getFontMetrics().getStringBounds(text, g2).getWidth();
         int x = tailX - length;
 
-        return x;
-    }
+        return x;
+    }
 }
