@@ -1,27 +1,33 @@
 package main;
 
 import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 public class Main {
+    // MAIN METHOD
 
-public static void main(String [] arg){
-    JFrame window = new JFrame();
-    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE) ;
-    window.setResizable(false) ;
-    window.setTitle("las locas aventuras de juan maziso") ;
+    public static JFrame window;
 
-    GamePanel gamePanel = new GamePanel();
-    window.add(gamePanel);
+    public static void main(String[] args) {
+        window = new JFrame();
+        window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Close (X) button
+        window.setResizable(false); // User unable to resize the window
+        window.setTitle("2D Adventure"); // Title of the Apps
 
-    window.pack();
+        // Call GamePanel
+        GamePanel gamePanel = new GamePanel();
+        window.add(gamePanel);
 
-//hola este afdsfdskfskgñs
-    window.setLocationRelativeTo(null) ; 
-    window.setVisible(true) ;
+        gamePanel.config.loadConfig();
+        if (gamePanel.fullScreenOn == true) {
+            window.setUndecorated(true);
+        }
 
-    gamePanel.setupGame();
-    gamePanel.startGameThread();
-    
+        window.pack();
+        window.setLocationRelativeTo(null);
+        window.setVisible(true);
 
+        gamePanel.setupGame();
+        gamePanel.startGameThread();
     }
 }
