@@ -12,7 +12,7 @@ public class Main {
         window = new JFrame();
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Close (X) button
         window.setResizable(false); // User unable to resize the window
-        window.setTitle("Las grandes aventuras de juan masizo"); // Title of the Apps
+        window.setTitle("2D Adventure"); // Title of the Apps
 
         // Call GamePanel
         GamePanel gamePanel = new GamePanel();
