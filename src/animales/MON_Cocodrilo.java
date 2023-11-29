@@ -1,4 +1,4 @@
-package monster;
+package animales;
 
 import java.util.Random;
 
@@ -9,17 +9,17 @@ import object.OBJ_Heart;
 import object.OBJ_ManaCrystal;
 import object.OBJ_Rock;
 
-public class MON_GreenSlime extends Entity {
+public class MON_Cocodrilo extends Entity {
 
     GamePanel gp;
 
-    public MON_GreenSlime(GamePanel gp) {
+    public MON_Cocodrilo(GamePanel gp) {
         super(gp);
 
         this.gp = gp;
 
         type = type_monster;
-        name = "Green Slime";
+        name = "Cocodrilo";
         defaultSpeed = 1;
         speed = defaultSpeed;
         maxLife = 4;
@@ -40,14 +40,14 @@ public class MON_GreenSlime extends Entity {
     }
 
     public void getImage() {
-        up1 = setup("/res/monster/greenslime_down_1", gp.tileSize, gp.tileSize);
-        up2 = setup("/res/monster/greenslime_down_2", gp.tileSize, gp.tileSize);
-        down1 = setup("/res/monster/greenslime_down_1", gp.tileSize, gp.tileSize);
-        down2 = setup("/res/monster/greenslime_down_2", gp.tileSize, gp.tileSize);
-        left1 = setup("/res/monster/greenslime_down_1", gp.tileSize, gp.tileSize);
-        left2 = setup("/res/monster/greenslime_down_2", gp.tileSize, gp.tileSize);
-        right1 = setup("/res/monster/greenslime_down_1", gp.tileSize, gp.tileSize);
-        right2 = setup("/res/monster/greenslime_down_2", gp.tileSize, gp.tileSize);
+        up1 = setup("/res/monster/Cocodrilo", gp.tileSize, gp.tileSize);
+        up2 = setup("/res/monster/Cocodrilo", gp.tileSize, gp.tileSize);
+        down1 = setup("/res/monster/Cocodrilo", gp.tileSize, gp.tileSize);
+        down2 = setup("/res/monster/Cocodrilo", gp.tileSize, gp.tileSize);
+        left1 = setup("/res/monster/Cocodrilo", gp.tileSize, gp.tileSize);
+        left2 = setup("/res/monster/Cocodrilo", gp.tileSize, gp.tileSize);
+        right1 = setup("/res/monster/Cocodrilo", gp.tileSize, gp.tileSize);
+        right2 = setup("/res/monster/Cocodrilo", gp.tileSize, gp.tileSize);
     }
 
     public void setAction() {
