@@ -13,28 +13,34 @@ import main.UtilityTool;
 public class Entity {
 
 	GamePanel gp;
-    public int worldX, worldY;
-    public int speed;
+
     public BufferedImage up1, up2, down1, down2, left1, left2, right1, right2;
-    public String direccion = "down";
-    public int spriteCounter = 0;
-    public int spriteNum = 1;
+	public BufferedImage attackUp1, attackUp2, attackDown1, attackDown2, attackLeft1, attackLeft2, attackRigth1, attackRigth2;
+	public BufferedImage image, image2, image3;
     public Rectangle solidArea = new Rectangle(0, 0, 48, 48);
     public int solidAreaDefaultX, solidAreaDefaultY;
-    public boolean collisionOn = false;
-    public int actionLockCounter = 0;
-	public boolean invicible = false;
-	public int invicibleCounter = 0;
-	public int type; // 0 = player, 1 = NPC , 2 = Monstruo
-
-
-    String dialogues[] = new String[20];
-    int dialogueIndex = 0;
-	public BufferedImage image, image2, image3;
-	public String name;
+	String dialogues[] = new String[20];
 	public boolean collision = false;
+	
+
+	//State
+	public int worldX, worldY;
+	public String direccion = "down";
+	public int spriteNum = 1;
+	int dialogueIndex = 0;
+	public boolean collisionOn = false;
+	public boolean invicible = false;
+	boolean attacKing  = false;
+
+	//Counter
+	public int actionLockCounter = 0;
+	public int spriteCounter = 0;
+	public int invicibleCounter = 0;
     
     //estatus del caracter
+	public int type; // 0 = player, 1 = NPC , 2 = Monstruo
+	public int speed;
+	public String name;
     public int maxLife;
     public int life;
     
@@ -165,12 +171,12 @@ public class Entity {
 		}
     }
     
-    public BufferedImage setup (String imagePath){
+    public BufferedImage setup (String imagePath, int width, int height){
         UtilityTool uTool = new UtilityTool();
         BufferedImage image = null;
         try{
             image = ImageIO.read(getClass().getResourceAsStream(imagePath +".png"));
-            image = uTool.scaleImage(image, gp.tileSize, gp.tileSize);
+            image = uTool.scaleImage(image, width, height);
         }catch (IOException e){
             e.printStackTrace();
         }

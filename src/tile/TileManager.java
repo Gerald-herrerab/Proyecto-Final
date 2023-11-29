@@ -22,7 +22,7 @@ public class TileManager {
 	public TileManager(GamePanel gp) {
 		
 		this.gp = gp;
-		tile = new Tile[50];
+		tile = new Tile[100];
 		
 		mapTileNum = new int [gp.maxWorldCol][gp.maxWorldRow];
 		
@@ -44,7 +44,7 @@ public class TileManager {
 		setup(8, "grass00", false);
 		setup(9, "grass00", false);
 		
-		setup(10, "grass00", false);
+		setup(10, "arbol", false);
 		setup(11, "grass01", false);
 		setup(12, "water00", true);
 		setup(13, "water01", true);
@@ -75,7 +75,11 @@ public class TileManager {
 		setup(38, "road00", false);
 		setup(39, "earth", false);
 		setup(40, "wall", true);
-		setup(41, "tree", true);
+		setup(41, "water2", true);
+		//setup(43, "Swirling tree1", true);
+		//setup(44, "Swirling tree2", true);
+		//setup(45, "tree", true);
+
 	}
 	
 	public void setup(int index, String imageName, boolean collision ) {
