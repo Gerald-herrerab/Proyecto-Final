@@ -14,7 +14,9 @@ public class OBJ_Axe extends Entity {
         attackValue = 2;
         attackArea.width = 30;
         attackArea.height = 30;
-        description = "[Woodcutter's Axe]\nA bit rusty but still \ncan cut some trees.";
+        description = "[Hacha del leñador]\\n" + //
+                "Un poco oxidada pero aún puede \\n" + //
+                "cortar algunos árboles.";
         price = 65;
         knockBackPower = 5;
     }

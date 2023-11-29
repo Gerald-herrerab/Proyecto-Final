@@ -15,13 +15,14 @@ public class OBJ_Potion_Red extends Entity {
         name = "Red Potion";
         value = 5;
         down1 = setup("/res/objects/potion_red", gp.tileSize, gp.tileSize);
-        description = "[Red Potion]\nHeals your life by " + value + ".";
+        description = "[Poción Roja]\\n" + //
+                "Cura tu vida en " + value + ".";
         price = 25;
     }
 
     public void use(Entity entity) {
         gp.gameState = gp.dialogueState;
-        gp.ui.currentDialogue = "You drink the " + name + "!\n" + "Your life has been recovered by " + value + ".";
+        gp.ui.currentDialogue = "Tomas la " + name + "!\n" + "Tu vida ha sido recuperada en " + value + ".";
         entity.life += value;
         gp.playSE(2);
     }

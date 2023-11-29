@@ -209,7 +209,7 @@ public class UI {
 
             // TITLE NAME
             g2.setFont(g2.getFont().deriveFont(Font.BOLD, 96F));
-            String text = "Blue Boy Adventure";
+            String text = "Las aventuras de Juan masizo";
             int x = getXforCenteredText(text);
             int y = gp.tileSize * 3;
 
@@ -229,7 +229,7 @@ public class UI {
             // MAIN MENU
             g2.setFont(g2.getFont().deriveFont(Font.BOLD, 48F));
 
-            text = "NEW GAME";
+            text = "Nuevo juego";
             x = getXforCenteredText(text);
             y += gp.tileSize * 3.5;
             g2.drawString(text, x, y);
@@ -237,7 +237,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "LOAD GAME";
+            text = "Cargar partida";
             x = getXforCenteredText(text);
             y += gp.tileSize;
             g2.drawString(text, x, y);
@@ -245,7 +245,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "QUIT";
+            text = "Salir";
             x = getXforCenteredText(text);
             y += gp.tileSize;
             g2.drawString(text, x, y);
@@ -259,12 +259,12 @@ public class UI {
             g2.setColor(Color.white);
             g2.setFont(g2.getFont().deriveFont(42F));
 
-            String text = "Select your class!";
+            String text = "Seleciona tu jugador!";
             int x = getXforCenteredText(text);
             int y = gp.tileSize * 3;
             g2.drawString(text, x, y);
 
-            text = "Fighter";
+            text = "Peleador";
             x = getXforCenteredText(text);
             y += gp.tileSize * 3;
             g2.drawString(text, x, y);
@@ -272,7 +272,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "Thief";
+            text = "brujo";
             x = getXforCenteredText(text);
             y += gp.tileSize;
             g2.drawString(text, x, y);
@@ -280,7 +280,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "Sorcerer";
+            text = "aldeano";
             x = getXforCenteredText(text);
             y += gp.tileSize;
             g2.drawString(text, x, y);
@@ -288,7 +288,7 @@ public class UI {
                 g2.drawString(">", x - gp.tileSize, y);
             }
 
-            text = "Back";
+            text = "Atras";
             x = getXforCenteredText(text);
             y += gp.tileSize * 2;
             g2.drawString(text, x, y);
@@ -300,7 +300,7 @@ public class UI {
 
     public void drawPauseScreen() {
         g2.setFont(g2.getFont().deriveFont(Font.PLAIN, 80F));
-        String text = "PAUSED";
+        String text = "PAUSA";
 
         int x = getXforCenteredText(text);
 
@@ -530,7 +530,7 @@ public class UI {
         String text;
         g2.setFont(g2.getFont().deriveFont(Font.BOLD, 110f));
 
-        text = "Game Over";
+        text = "HAS PERDIDO";
 
         // SHADOW
         g2.setColor(Color.black);
@@ -554,7 +554,7 @@ public class UI {
         }
 
         // QUIT
-        text = "Quit";
+        text = "SALIR";
         x = getXforCenteredText(text);
         y += 55;
         g2.drawString(text, x, y);
@@ -598,7 +598,7 @@ public class UI {
         int textY;
 
         // TITLE
-        String text = "Options";
+        String text = "Opciones";
         textX = getXforCenteredText(text);
         textY = frameY + gp.tileSize;
         g2.drawString(text, textX, textY);
@@ -606,7 +606,7 @@ public class UI {
         // FULL SCREEN ON/OFF
         textX = frameX + gp.tileSize;
         textY += gp.tileSize * 2;
-        g2.drawString("Full Screen", textX, textY);
+        g2.drawString("Pantalla completa", textX, textY);
         if (commandNum == 0) {
             g2.drawString(">", textX - 25, textY);
 
@@ -622,21 +622,21 @@ public class UI {
 
         // MUSIC
         textY += gp.tileSize;
-        g2.drawString("Music", textX, textY);
+        g2.drawString("Musica", textX, textY);
         if (commandNum == 1) {
             g2.drawString(">", textX - 25, textY);
         }
 
         // SOUND EFFECT
         textY += gp.tileSize;
-        g2.drawString("SE", textX, textY);
+        g2.drawString("Sonido ef", textX, textY);
         if (commandNum == 2) {
             g2.drawString(">", textX - 25, textY);
         }
 
         // CONTROL
         textY += gp.tileSize;
-        g2.drawString("Control", textX, textY);
+        g2.drawString("Controles", textX, textY);
         if (commandNum == 3) {
             g2.drawString(">", textX - 25, textY);
 
@@ -648,7 +648,7 @@ public class UI {
 
         // END GAME
         textY += gp.tileSize;
-        g2.drawString("End Game", textX, textY);
+        g2.drawString("Fin del juego", textX, textY);
         if (commandNum == 4) {
             g2.drawString(">", textX - 25, textY);
 
@@ -660,7 +660,7 @@ public class UI {
 
         // BACK
         textY += gp.tileSize * 2;
-        g2.drawString("Back", textX, textY);
+        g2.drawString("Atras", textX, textY);
         if (commandNum == 5) {
             g2.drawString(">", textX - 25, textY);
 
@@ -788,7 +788,7 @@ public class UI {
         }
 
         // YES
-        String text = "Yes";
+        String text = "Si";
         textX = getXforCenteredText(text);
         textY += gp.tileSize * 3;
         g2.drawString(text, textX, textY);
@@ -867,7 +867,7 @@ public class UI {
         // DRAW TEXTS
         x += gp.tileSize;
         y += gp.tileSize;
-        g2.drawString("Buy", x, y);
+        g2.drawString("COMPRAR", x, y);
 
         if (commandNum == 0) {
             g2.drawString(">", x - 24, y);
@@ -891,7 +891,7 @@ public class UI {
 
         y += gp.tileSize;
 
-        g2.drawString("Leave", x, y);
+        g2.drawString("VENDER", x, y);
 
         if (commandNum == 2) {
             g2.drawString(">", x - 24, y);
@@ -899,7 +899,7 @@ public class UI {
             if (gp.keyH.enterPressed == true) {
                 commandNum = 0;
                 gp.gameState = gp.dialogueState;
-                currentDialogue = "Come again, hehe!";
+                currentDialogue = "Vuelve pronto, hehe!";
             }
         }
     }
@@ -918,7 +918,7 @@ public class UI {
         int height = gp.tileSize * 2;
 
         drawSubWindow(x, y, width, height);
-        g2.drawString("[ESC] Back", x + 24, y + 60);
+        g2.drawString("[ESC] Atras", x + 24, y + 60);
 
         // DRAW PLAYER COIN WINDOW
         x = gp.tileSize * 12;
@@ -927,7 +927,7 @@ public class UI {
         height = gp.tileSize * 2;
 
         drawSubWindow(x, y, width, height);
-        g2.drawString("Your Coin: " + gp.player.coin, x + 24, y + 60);
+        g2.drawString("tus monedas " + gp.player.coin, x + 24, y + 60);
 
         // DRAW PRICE WINDOW
         int itemIndex = getItemIndexOnSlot(npcSlotCol, npcSlotRow);
@@ -950,12 +950,12 @@ public class UI {
                 if (npc.inventory.get(itemIndex).price > gp.player.coin) {
                     subState = 0;
                     gp.gameState = gp.dialogueState;
-                    currentDialogue = "You need more coin to buy that!";
+                    currentDialogue = "no tienes monedas suficientes para este articulo!";
                     drawDialogueScreen();
                 } else if (gp.player.inventory.size() == gp.player.maxInventorySize) {
                     subState = 0;
                     gp.gameState = gp.dialogueState;
-                    currentDialogue = "Your inventory is full!";
+                    currentDialogue = "Tu inventario esta lleno";
                 } else {
                     gp.player.coin -= npc.inventory.get(itemIndex).price;
                     gp.player.inventory.add(npc.inventory.get(itemIndex));
@@ -980,7 +980,7 @@ public class UI {
         height = gp.tileSize * 2;
 
         drawSubWindow(x, y, width, height);
-        g2.drawString("[ESC] Back", x + 24, y + 60);
+        g2.drawString("[ESC] Atras", x + 24, y + 60);
 
         // DRAW PLAYER COIN WINDOW
         x = gp.tileSize * 12;
@@ -989,7 +989,7 @@ public class UI {
         height = gp.tileSize * 2;
 
         drawSubWindow(x, y, width, height);
-        g2.drawString("Your Coin: " + gp.player.coin, x + 24, y + 60);
+        g2.drawString("Tus monedas: " + gp.player.coin, x + 24, y + 60);
 
         // DRAW PRICE WINDOW
         int itemIndex = getItemIndexOnSlot(playerSlotCol, playerSlotRow);
@@ -1014,7 +1014,7 @@ public class UI {
                     commandNum = 0;
                     subState = 0;
                     gp.gameState = gp.dialogueState;
-                    currentDialogue = "You cannot sell an equipped item!";
+                    currentDialogue = "No puedes vender un articulo equipado!";
                 } else {
                     gp.player.inventory.remove(itemIndex);
                     gp.player.coin += price;
